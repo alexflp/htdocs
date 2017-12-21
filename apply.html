@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/icon.png">
+	
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+</head>
+<body>
+	<nav id="servicenav" class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="images/alphapay-white.png"></a>
+	        </div>
+	       
+	     	
+		          <ul class="nav navbar-nav navbar-right">
+		            <li><a href="/index.php" data-nav-section="home"><span style="color: white;">Home</span></a></li>
+		            <li><a href="/service.html"><span style="color: white;">Services</span></a></li>
+                <li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
+		            
+		          </ul>
+		   
+	    </div>
+	</nav>
+	
+
+		<div class="message">
+      <br>
+      <br>
+         <form class="container" id="leavemess" role="form" action="mail.php"  method="POST" enctype="multipart/form-data">
+          <h3  style="text-align: center;">Apply</h3>
+          <br>
+        
+            <div class="row">
+                <h4>Company Information</h4>
+              <div class="col-md-6 mb-5">
+                <label for="m01">Registeration Name</label>
+                <input type="text" class="form-control" id="message1" name="registname" placeholder="Registeration Name" required>
+              </div>
+              <div class="col-md-6 mb-5">
+                <label for="m02">Trade name</label>
+                <input type="text" class="form-control" id="message2" name="tradename" placeholder="Trade Name" required>
+              </div>
+              <div class="col-md-12 mb-5">
+                 <label for="m02">Short Name</label>
+                <input type="text" class="form-control" id="message2" name="shortname" placeholder="Short Name" required>
+              </div>
+
+              <div class="col-md-6 mb-5">
+                <label for="m02">Address</label>
+                <input type="text" class="form-control" id="message2" name="address"  required>
+              </div>
+
+              <div class="col-md-6 mb-5">
+                   <label for="m02">Service Phone</label>
+                <input type="text" class="form-control" id="message2" name="sphone" required>
+              </div>
+
+              <div class="col-md-12 mb-5">
+                  <label for="m02">Description</label>
+                   <textarea class="form-control" rows="5" id="messgae7" name="des" placeholder=""></textarea>
+             </div>
+
+            </div>
+
+            <br>
+            <div class="row">
+                <h4>Company Industry</h4>
+                <div class="col-md-3 mb-5 industry">
+                    <input type="radio" name="industry" value="retail"> Retail<br>
+                    <input type="radio" name="industry" value="education"> Education<br>
+                    <input type="radio" name="industry" value="travel"> Travel<br>  
+                </div>
+
+                <div class="col-md-3 mb-5 industry">
+                    <input type="radio" name="industry" value="restaurant"> Food and Restaurant<br>
+                    <input type="radio" name="industry" value="logistics"> International Logistics<br>
+                    <input type="radio" name="industry" value="hotel"> Hotel<br>  
+
+                </div>
+
+                <div class="col-md-3 mb-5 industry">
+                      <input type="radio" name="industry" value="cloth"> Clothing and Shoes<br>
+                    <input type="radio" name="industry" value="baby"> Baby and Maternal<br>
+                     
+                </div>
+                <div class="col-md-3 mb-5 industry">
+                    <input type="radio" name="industry" value="auto">Automobile and Vehicles<br>
+                    <input type="radio" name="industry" value="other"> Others<br>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="row">
+               <h4>Contact Information</h4>
+               <div class="col-md-6 mb-5">
+                <label for="m03">Full Name</label>
+                <input type="text" class="form-control" id="message3" name="name" placeholder="Your Name" required>
+             
+              </div>
+               <div class="col-md-6 mb-5">
+                <label for="m04">Job Title</label>
+                <input type="text" class="form-control" id="message4" name="title" placeholder="Your Title" required>
+              
+              </div>
+              <div class="col-md-6 mb-5">
+                <label for="m05">Phone</label>
+                <input type="text" class="form-control" id="message5" name="phone" placeholder="Phone" required>
+               
+              </div>
+              <div class="col-md-6 mb-5">
+                <label for="m06">E-mail</label>
+                <input type="text" class="form-control" id="message6" name="email" placeholder="E-mail" required>
+               
+              </div>
+            <!--   <div class="col-md-12">
+                  <label for="m07">Notes</label>
+                  <textarea class="form-control" rows="5" id="messgae7" name="note" placeholder="Notes"></textarea>
+                </div>
+
+                <div class="col-md-12">
+                   <input type="file" name="fileToUpload" id="fileToUpload">
+                </div> -->
+            </div>
+            <br>
+            <div class="row">
+                <h4>Products and Services</h4>
+              <div class="col-md-3 mb-5 productandservice">
+                   <input type="checkbox" name="service" value="wonline"> Wechat Online
+              </div>
+              <div class="col-md-3 mb-5 productandservice">
+                   <input type="checkbox" name="service" value="woffline"> Wechat Offline
+              </div>
+
+              <div class="col-md-3 mb-5 productandservice">
+                  <input type="checkbox" name="service" value="aonline"> AliPay Online
+              </div>
+
+              <div class="col-md-3 mb-5 productandservice">
+                  <input type="checkbox" name="service" value="aoffline"> AliPay Offline
+              </div>
+            </div>
+            <br>
+            <div class="row">
+                <h4>Document Uploads</h4>
+              <div class="col-md-6 mb-5 productandservice">
+                    <label for="m35">Upload Notice of Articles</label>
+                    <input type="file" name="image">
+        
+                 
+              </div>
+              <div class="col-md-6 mb-5 productandservice">
+                      <label for="m36">Upload Copy of Photo ID</label>
+                      <input type="file" name="photoid"><br>
+                     
+              </div>
+
+              <div class="col-md-6 mb-5 productandservice">
+                    <label for="m37">Upload a VOID cheque</label>
+                    <input type="file" name="cheque"><br>
+                   
+              </div>
+
+              <div class="col-md-6 mb-5 productandservice">
+                    <label for="m38">Picture Store Front Photo</label>
+                    <input type="file" name="frontphoto"><br>
+               
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-5"> <button id="leavebt" class="btn" type="submit">Submit</button></div>
+               
+            </div>
+          </form>
+        </div>
+        <script>
+          $('.apply').on('keypress', function(e) {
+          return e.which !== 13;
+        });
+          </script>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+              
+                  <br>
+                  <p class="copyright text-center">&copy; 2017-2018. All right reserved by AlphaPay.</p>
+                </div>
+                <div class="col-md-3">
+                  <br>
+                  	<p><img src="images/wx.png"> <img src="images/icon/facebook.png"> <img src="images/icon/twitter.png"> <img src="images/icon/youtube.png"></p>
+
+                </div>
+              </div>
+        
+        </div>
+        
+        
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Main JS (Do not remove) -->
+        <script src="js/main.js"></script>
+      
+        <script src="js/index.js"></script>
+      
+        </body>
+      </html>

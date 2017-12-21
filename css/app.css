@@ -1,0 +1,477 @@
+#top {
+    width: 53px;
+    height: 53px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 12px;
+    padding-left: 2px;
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+#top:hover, #top:active, #top:focus {
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+.scrolled #top {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.header {
+    padding: 0 40px 60px;
+    background: #fff;
+}
+
+.signature {
+    margin: 40px auto 0;
+    width: 150px;
+    display: block;
+    margin-right: 20px;
+}
+
+nav {
+    text-align: right;
+    font-size: 10px;
+}
+
+nav.nav-left {
+    float: left;
+}
+
+nav.nav-right {
+    float: right;
+}
+
+nav .fa {
+    font-size: 14px;
+}
+
+nav .fa-twitter:hover {
+    color: #5EA9DD;
+}
+
+nav .fa-dribbble:hover {
+    color: #EA4C89;
+}
+
+@media (max-width: 544px) {
+    nav.nav-left {
+        float: none;
+    }
+
+    nav.nav-right {
+        float: none;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+nav a {
+    padding-bottom: 3px;
+    color: #bcbcbc;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #96989b;
+    border-bottom: 1px solid #96989b;
+}
+
+.icon-cross-circle {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: -12px;
+    padding: 10px;
+    -webkit-transform: rotate(-170deg);
+    transform: rotate(-170deg);
+    -webkit-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+.icon-cross-circle:hover,
+.icon-cross-circle:focus,
+.icon-cross-circle:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hgroup {
+    transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+}
+
+@media (max-width: 544px) {
+    .header {
+        padding: 70px 40px 80px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    nav {
+        display: inline;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 26px 0px;
+        /*background: #5F5F63;*/
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transition: 0.5s ease-out;
+        -webkit-transition: 0.5s ease-out;
+    }
+
+    .navigation .nav-right {
+        padding-left: 10px;
+    }
+
+    .show-nav .navigation {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    .show-nav .hgroup {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+
+    .show-nav .icon-cross-circle {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    .hamburger {
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 20px;
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .hamburger img {
+        width: 20px;
+    }
+
+    .hamburger:hover, .hamburger:active {
+        color: #888;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    nav a.active {
+        color: #fff;
+        border: 0 none;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+        color: #fff;
+    }
+}
+
+@media (max-width: 544px) {
+    nav.nav {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: #c1c3c4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.byline {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.byline a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-shadow: -1px 0 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff;
+}
+
+.header .title {
+    font-size: 60px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    clear: both;
+}
+
+.article {
+    padding: 180px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.article.visible {
+    background: linear-gradient(#f8f8f8, #fff);
+}
+
+.article .edit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.article .links span,
+.article .links a {
+    opacity: 0.7;
+}
+
+.article .links a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.article h1 {
+    margin-top: 38px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.article .links {
+    font-size: 11px;
+}
+
+.icon-pen2 {
+    font-size: 40px;
+    color: #444;
+}
+
+.mute {
+    opacity: 0.5;
+}
+
+.day_alt {
+    display: none;
+}
+
+.show_full_day .day {
+    display: none;
+}
+
+.show_full_day .day_alt {
+    display: inline;
+}
+
+#about-page {
+    display: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+#footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* -----------------------------------------------
+  App styles
+  ------------------------------------------------ */
+
+.error,
+a.error,
+a.error:hover,
+a.error:focus,
+button.error,
+button.error:hover,
+button.error:focus {
+    color: #D9534F;
+}
+
+.form-actions {
+    background: #fff;
+    border: 0;
+}
+
+#spacer {
+    display: inline-block;
+}
+
+.muted {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    font-size: 14px;
+    color: #000 !important;
+}
+
+.navbar-nav > li > a.travis {
+    padding-top: 13px;
+}
+
+.navbar-right > li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contact .icon {
+    font-size: 14px;
+    display: none;
+}
+
+.contact .icon-envelope {
+    display: inline-block;
+}
+
+.contact:hover .icon-envelope {
+    display: none;
+}
+
+.contact:hover .icon-envelope-open {
+    display: inline-block;
+}
+
+/* about */
+
+#about .navbar {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.about-row {
+    width: 100%;
+    display: block;
+}
+
+.about-banner {
+    background: url(./images/about_banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+    padding-top: 80px;
+}
+
+.about-banner .title {
+    font-family: Ubuntu;
+    font-size: 48px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.about-banner .subtitle {
+    text-transform: none;
+}
+
+.about-row .title {
+    margin-bottom: 60px;
+}
+
+.numbers {
+    padding: 80px 0;
+}
+
+.numbers .item {
+    text-align: center;
+}
+
+.numbers .item > h2 {
+    font-size: 18px;
+}
+
+.numbers .item > h2, .numbers .item > p {
+    display: block;
+    width: 100%;
+}
+
+.numbers .item > img {
+    width: 60px;
+    display: block;
+    margin: auto;
+}
+
+.leaders {
+    background: #30af69;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.leaders .leader img.headimg {
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.whats-royalpay {
+    padding: 60px 0;
+}

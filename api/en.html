@@ -1,0 +1,5389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <title>AlphaPay</title>
+      <link rel="shortcut icon" href="/images/icon.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+      
+        <!-- Simple Line Icons -->
+        <link rel="stylesheet" href="/css/simple-line-icons.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+    
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+    
+
+      <link rel="stylesheet" type="text/css" href="/stylesheets/api.css">
+
+
+  </head>
+  <body>
+    <header>
+        <nav id="servicenav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="../images/alphapay-white.png"></a>
+                </div>
+               
+                 
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/index.php" data-nav-section="home"><span style="color: white;">Home</span></a></li>
+                        <li><a href="/service.html"><span style="color: white;">Services</span></a></li>
+                        <li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
+                     
+                        
+                      </ul>
+               
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container-fluid">
+  <div class="row">
+    <div id="sidenav" class="span2">
+<nav id="scrollingNav">
+ 
+  <ul class="sidenav nav nav-list list"><li class="nav-fixed nav-header navbar-btn nav-list-item" data-group="_"><a href="#api-_">Overview</a></li><li class="nav-header nav-list-item" data-group="QRCode"><a href="#api-QRCode">QRCode</a></li><li class="" data-group="QRCode" data-name="NewQRCode" data-version="1.0.0">
+          <a href="#api-QRCode-NewQRCode" class="nav-list-item">Create QR Code Payment</a>
+        </li><li class="" data-group="QRCode" data-name="QRCodePay" data-version="1.0.0">
+          <a href="#api-QRCode-QRCodePay" class="nav-list-item">QR Code Payment Page in AlphaPay</a>
+        </li><li class="nav-header nav-list-item" data-group="JSApi"><a href="#api-JSApi">JSApi</a></li><li class="" data-group="JSApi" data-name="NewJSAPI" data-version="1.0.0">
+          <a href="#api-JSApi-NewJSAPI" class="nav-list-item">Create JSAPI Payment Order</a>
+        </li><li class="" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.1">
+          <a href="#api-JSApi-JSAPIPay" class="nav-list-item">JSAPI Payment Page in AlphaPay</a>
+        </li><li class="hide" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.0">
+          <a href="#api-JSApi-JSAPIPay" class="nav-list-item">JSAPI Payment Page in AlphaPay</a>
+        </li><li class="nav-header nav-list-item" data-group="MobileH5"><a href="#api-MobileH5">MobileH5</a></li><li class="" data-group="MobileH5" data-name="NewMobileH5Pay" data-version="1.0.0">
+          <a href="#api-MobileH5-NewMobileH5Pay" class="nav-list-item">Create H5 Payment</a>
+        </li><li class="" data-group="MobileH5" data-name="MobileH5Pay" data-version="1.0.0">
+          <a href="#api-MobileH5-MobileH5Pay" class="nav-list-item">H5 Payment Page</a>
+        </li><li class="nav-header nav-list-item" data-group="RetailPay"><a href="#api-RetailPay">RetailPay</a></li><li class="" data-group="RetailPay" data-name="RetailMicroPay" data-version="1.0.2">
+          <a href="#api-RetailPay-RetailMicroPay" class="nav-list-item">Create Retail Passive Payment Order</a>
+        </li><li class="" data-group="RetailPay" data-name="RetailQRCode" data-version="1.0.2">
+          <a href="#api-RetailPay-RetailQRCode" class="nav-list-item">Create Retail Active Payment Order</a>
+        </li><li class="nav-header nav-list-item" data-group="CommonApi"><a href="#api-CommonApi">CommonApi</a></li><li class="" data-group="CommonApi" data-name="GetExchange" data-version="1.0.0">
+          <a href="#api-CommonApi-GetExchange" class="nav-list-item">Get Current Exchange Rate</a>
+        </li><li class="" data-group="CommonApi" data-name="OrderStatus" data-version="1.0.1">
+          <a href="#api-CommonApi-OrderStatus" class="nav-list-item">Query Order Status</a>
+        </li><li class="" data-group="CommonApi" data-name="RefundOrder" data-version="1.0.0">
+          <a href="#api-CommonApi-RefundOrder" class="nav-list-item">Apply for Refund</a>
+        </li><li class="" data-group="CommonApi" data-name="RefundQuery" data-version="1.0.0">
+          <a href="#api-CommonApi-RefundQuery" class="nav-list-item">Query Refund Order Status</a>
+        </li><li class="" data-group="CommonApi" data-name="ListOrder" data-version="1.0.0">
+          <a href="#api-CommonApi-ListOrder" class="nav-list-item">Check Orders</a>
+        </li><li class="nav-header nav-list-item" data-group="API"><a href="#api-API">API</a></li><li class="" data-group="API" data-name="PayNotice" data-version="1.0.0">
+          <a href="#api-API-PayNotice" class="nav-list-item">Payment Success Notice</a>
+        </li></ul>
+</nav>
+</div>
+    <div id="content">
+      <div id="project">
+  <div class="pull-left">
+    <h1>AlphaPay Gateway Payment API</h1>
+    <h2>AlphaPay Gateway Payment API for Third-Party Developers</h2>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+      <div id="header">
+    <div id="api-_"><h1>Overview</h1>
+<h2>Domain</h2>
+<h4>Production Environment</h4>
+<p><a href="https://pay.alphapay.ca/">https://pay.alphapay.ca/</a></p>
+<p>Sandbox has different sign parameters. Contact us to configure it for you.</p>
+<h2>Request And Parameters</h2>
+<p>Request for payment or refund shall use PUT method. Request for querying order
+shall use GET method. All requests including Request Entity are in JSON format.</p>
+<p>Accept in the request header shall be set to application/json for all requests except redirect pages.
+Content-Type in the request header shall be set to application/json for all PUT/POST requests.</p>
+<p>System charset is UTF-8.</p>
+<p>There are 3 groups of parameters: Path Variable, Query Param, JSON Entity</p>
+<ul>
+<li>Path Variable: included in the path as patterns</li>
+<li>Query Param: parameters after the URI '?' symbol and formatted like key=value</li>
+<li>JSON Entity: only used in PUT/POST requests</li>
+</ul>
+<p>Our API server will return 200 in JSON if the request has successfully reached the server, which does not indicate the success or failure of the actual operation. All responses in JSON format will include a return_code field which contains the operation result. The value SUCCESS indicates that the operation was successful while other values shows the type of error that happened. Response will also contain a return_msg field for detailed error message.</p>
+<h2>Multi-Language</h2>
+<p>System error message supports Simplified Chinese and English. The system by default will automatically choose the language according to the Accept-Language value in request header. Cookie "locale" value (zh-CN or en-US) will affect the result language.</p>
+<h2>Sign Algorithm</h2>
+<p>Sign messages are required in each request for validation. Sign parameters are all attached to URL as query params, and the order is irrelevant.</p>
+<p>Sign Program:</p>
+<ol>
+<li>Connect 4 parameters with '&amp;' symbol into an original valid string. Escape value is not required.</li>
+</ol>
+<blockquote>
+<p>valid_string=partner_code&amp;time&amp;nonce_str&amp;credential_code</p>
+</blockquote>
+<p>Parameters:</p>
+<ul>
+<li>partner_code: Code for partner, including four uppercase letters or numbers.</li>
+<li>time: PDT timestamp in milliseconds. Take current timestamp of PDT. Data type is Long. The difference between time and AlphaPay server time should be less than 5 minutes.</li>
+<li>nonce_str: Random string. No limit for length. URL-Safe characters are required. The proposed length is 10-30 characters.</li>
+<li>credential_code: Partner credential code for development provided by AlphaPay system. Keep it safe and never disclose it to the public. If compromised, contact us to change it.</li>
+</ul>
+<ol start="2">
+<li>Sign the valid string with SHA256 and turn to lowercase Hex string</li>
+</ol>
+<blockquote>
+<p>sign=hex(sha256(valid_string)).toLowerCase()</p>
+</blockquote>
+<ol start="3">
+<li>Include the time,nonce_str and sign into Query Param when calling api.</li>
+</ol>
+<blockquote>
+<p>Example</p>
+<p>valid_string=RPAY&amp;1468691301081&amp;aaf2a94c8c2d56d5b43a1a3d9d811102&amp;pQ5Jc9eoTcsxqPY5uQ3p2WmvSy0zEYeP
+sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
+</blockquote>
+<blockquote>
+<p>Test Page:<a href="https://pay.alphapay.ca/sign_test.html" target="_blank"> https://pay.alphapay.ca/sign_test.html</a></p>
+</blockquote>
+<h2>Currency Codes</h2>
+<p>AlphaPay can only accept the following currencies at the moment. Please note that the settlement currency will always be Canadian Dollar.</p>
+<ul>
+<li>CAD</li>
+<li>CNY</li>
+</ul>
+<h2>Business Roles</h2>
+<ul>
+<li>QR Code Payment displays a QR code image in a web page. Customers will scan the code via their WeChat and complete the payment in the linked web page. It is suitable for online shopping websites.</li>
+<li>JSAPI Payment redirects customers to a web page in WeChat. This page can only be opened within WeChat app and it is suitable for payment from micro-shops on WeChat platform.</li>
+<li>Retail passive payment(Scan Payment Code in customers’ WeChat Wallet) and active payment(Generate Payment QR Code for customers to scan) are used in retail environment such as payment terminals and pos machines.</li>
+<li>Order ID is required when creating an order. The same order id can be sent again. The system will decide to renew an order or close the old order according to the order status. System will recognise the same order id to avoid duplicated payments from customers.</li>
+<li>As orders can be resubmitted, Order ID returned by our server might not represent the last Order ID paid.</li>
+<li>QR Code order creation will return QR Code and pay_url. Merchants may decide whether to display the QR code on their website or to redirect customer to the payment page available at pay_url.</li>
+<li>JSAPI order creation will return pay_url. Merchants shall redirect customer to the payment page available at pay_url, and complete the payment.</li>
+<li>When redirecting to pay_url, sign information is required.</li>
+<li>Each request shall use new timestamp, nonce_str and sign.</li>
+<li>Our system will notify the caller after an order is paid successfully if notify_url was provided when creating an order. Otherwise, Merchants shall call the order query method repeatedly until order is paid or closed.</li>
+<li>Each unpaid order will be valid for 5 minutes. Expired order can be renewed with same the order id. It is suggested to trigger the event when user open the payment page again.</li>
+<li>Always redirect to AlphaPay’s payment page after calling the order creation method.</li>
+<li>Same order id is allowed in both creating new payment order and creating refund order but order details shall refer back to the initial request details.</li>
+<li>Price is specified in the base unit of the given currency. Using currency CAD as an example, 105 means 105 cents or $1.05.</li>
+
+</div>
+</div>
+      <div id="sections">
+  <section id="api-QRCode">
+    <h1>QRCode</h1>
+      <div id="api-QRCode-NewQRCode">
+        
+  <article id="api-QRCode-NewQRCode-1.0.0" data-group="QRCode" data-name="NewQRCode" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>QRCode - Create QR Code Payment</h1>
+    </div>
+   
+    <div class="clearfix"></div>
+
+
+      <p></p><p>QR Code Payment is used for webpage/application on PC. Customers use wechat app to scan QR Code generated when creating order and finish the payment.<br> <img class="showp" src="/images/QRCODE_process_en1.png"><br> Return value contains QR Code string, QR Ccode image and payment page address. Partners can decide how to finish the payment. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. Shall be unique for the same partner. If repeated, order will be recognized as an existing order.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Description of an order.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Price of the order. Use the base unit of the currency.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency</p>
+            <p class="default-value">Default value: <code>CAD</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>System will call the notify url if provided when the payment succeeds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Note for the operator who created this order.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS means order created successfully, EXISTS means order has already existed.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's full company name when registered</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's name</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id. The final order id which is paid may be different from this one.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">code_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>QR Code string. Partners can create the payment QR Code according to this value.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">qrcode_img</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>QR Code image formatted in Base64. Can be used as the src attribute on img element</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Payment page in AlphaPay</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>Order has already been paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-QRCode-QRCodePay">
+        
+  <article id="api-QRCode-QRCodePay-1.0.0" data-group="QRCode" data-name="QRCodePay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>QRCode - QR Code Payment Page in AlphaPay</h1>
+    </div>
+  
+    <div class="clearfix"></div>
+
+
+      <p></p><p>This page mush be called after payment order has been created. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. It shall have already been created</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Redirect url when payment succeeded. Contain sign parameters for validation.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-JSApi">
+    <h1>JSApi</h1>
+      <div id="api-JSApi-NewJSAPI">
+        
+  <article id="api-JSApi-NewJSAPI-1.0.0" data-group="JSApi" data-name="NewJSAPI" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>JSApi - Create JSAPI Payment Order</h1>
+    </div>
+   
+    <div class="clearfix"></div>
+
+
+      <p></p><p>JSAPI Payment is used to pay in webpage which was opened in WeChat App. If customers enter this page from WeChat Official Account, this Official Account is required to be authorized. Customers will jump to AlphaPay order page and call WeChat Payment Board to finish payment.<br> <img class="showp" src="/images/_JSAPI_process_en1.png"><br> Return value contains a payment page. Partners shall guide users to redirect to the page. Sign params is required when redirect happens. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Order description</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Price of the order. Use the base unit of the currency.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>currency</p>
+            <p class="default-value">Default value: <code>CAD</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>System will call the notify url if provided when the payment succeeds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Note for the operator who created this order.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS means order created successfully, EXISTS means order has already existed.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's full company name when registered</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's name</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id. The final order id which is paid may be different from this one</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Payment page in AlphaPay. Can only be accessed through WeChat</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>Order has already been paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-JSApi-JSAPIPay">
+        
+  <article id="api-JSApi-JSAPIPay-1.0.1" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.1">
+    <div class="pull-left">
+      <h1>JSApi - JSAPI Payment Page in AlphaPay</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>This page must be called after Payment Order has been created. If the direct pay mode is on, order details will not display and WeChat payment dialog will be shown automatically when the page loads immediately. and will redirect back no matter the payment succeeds or fails. The redirect URL will not contain sign parameters. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. Must have already been created</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Redirect url when the payment succeeded</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">directpay</td>
+              <td>
+                Boolean
+              </td>
+            <td>
+            <p>whether open direct pay mode.</p>
+            <p class="default-value">Default value: <code>false</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>true</code>, 
+                <code>false</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-JSApi-JSAPIPay">
+        
+  <article id="api-JSApi-JSAPIPay-1.0.0" class="hide" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>JSApi - JSAPI Payment Page in AlphaPay</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>This page must be called after Payment Order has been created.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. Must have already been created</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Redirect url when the payment succeeded</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-MobileH5">
+    <h1>MobileH5</h1>
+      <div id="api-MobileH5-NewMobileH5Pay">
+        
+  <article id="api-MobileH5-NewMobileH5Pay-1.0.0" data-group="MobileH5" data-name="NewMobileH5Pay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>MobileH5 - Create H5 Payment</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p><b>Warning：H5 Payment socket requires application separately and requires agreement from Tencent. Merchants who needs this socket please contact AlphaPay first</b><br> H5 Payment is used for payment in Webpage or App on mobile outside WeChat App. The browser would redirect to a webpage from WeChat and call WeChat App to finish the payment.<br> Return value contains a payment page. Partners shall guide users to redirect to this page. Sign params are required. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Order description</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Price of the order. Use the base unit of the currency.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>currency</p>
+            <p class="default-value">Default value: <code>CAD</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>System will call the notify url if provided when the payment succeeds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Note for the operator who created this order.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS means order created successfully, EXISTS means order has already existed.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's full company name when registered</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's name</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Payment page in AlphaPay.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>Order has already been paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-MobileH5-MobileH5Pay">
+        
+  <article id="api-MobileH5-MobileH5Pay-1.0.0" data-group="MobileH5" data-name="MobileH5Pay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>MobileH5 - H5 Payment Page</h1>
+    </div>
+  
+    <div class="clearfix"></div>
+
+
+      <p></p><p>This page mush be called after payment order has been created. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. It shall have already been created</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Redirect url when payment succeeded. Contain sign parameters for validation.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-RetailPay">
+    <h1>RetailPay</h1>
+      <div id="api-RetailPay-RetailMicroPay">
+        
+  <article id="api-RetailPay-RetailMicroPay-1.0.2" data-group="RetailPay" data-name="RetailMicroPay" data-version="1.0.2">
+    <div class="pull-left">
+      <h1>RetailPay - Create Retail Passive Payment Order</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>Retail Passive Payment is used for cashier terminals which can scan BarCode or QRCode. Shop staff input the payment amount and ask customers for their payment code, then system send price and payment code to server and finish the payment. Retail Passive Payment now support both Alipay and WeChat<br> <img src="/images/Retail_en1.png"></p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Order description</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Price of the order. Use the base unit of the currency.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>currency</p>
+            <p class="default-value">Default value: <code>CAD</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">device_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, ID of the device which sends the request</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">auth_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, The Payment QR Code scanned from customer's WeChat Wallet.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>System will call the notify url if provided when the payment succeeds.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order status</p> <ul>     <li>PAYING:Waiting for payment</li>     <li>CREATE_FAIL:Fail to create order</li>     <li>CLOSED:Order closed</li>     <li>PAY_FAIL:Payment failed</li>     <li>PAY_SUCCESS:Payment succeeded</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Order amount, which uses the base unit of current currency</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Actual paid amount.(The same as total fee at the moment. After coupon feature is finished, this may be different.)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency. Default value is CAD.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order ID does not belongs to current partner.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>Order has already been paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTHCODEEXPIRE</td>
+            <td>
+            <p>QR Code expired</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOTENOUGH</td>
+            <td>
+            <p>The customer does not have enough balance to finish the payment</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOTSUPORTCARD</td>
+            <td>
+            <p>Card type is not supported</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTH_CODE_ERROR</td>
+            <td>
+            <p>Payment QR Code has been used twice</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTH_CODE_INVALID</td>
+            <td>
+            <p>The submitted QR Code is not a WeChat Payment QR Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-RetailPay-RetailQRCode">
+        
+  <article id="api-RetailPay-RetailQRCode-1.0.2" data-group="RetailPay" data-name="RetailQRCode" data-version="1.0.2">
+    <div class="pull-left">
+      <h1>RetailPay - Create Retail Active Payment Order</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>Retail Active Payment is used for cashier terminals which cannot scan Barcode or QRCode. Get the Code url after create the order, convert this url to a QRCode and ask customers use their app to scan this QRCode then finish the payment. Retail Active Payment now support Alipay, WeChat and Bestpay<br> <img src="/images/RetailQR_en1.png"><br> If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id. Shall be unique for the same partner. If repeated, order will be recognized as an existed order.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Description of order.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Price of the order. Use the base unit of the currency.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency</p>
+            <p class="default-value">Default value: <code>CAD</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">device_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, ID of the device which sends the request.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>System will call the notify url if provided when the payment succeeds</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS means order created successfully, EXISTS means order has already existed.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's full company name when registered</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner's name</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id. The final order id which is paid may be different from this one</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">code_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>QR Code string. Partners can create the payment QR Code according to this value.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>Order has already been paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-CommonApi">
+    <h1>CommonApi</h1>
+      <div id="api-CommonApi-GetExchange">
+        
+  <article id="api-CommonApi-GetExchange-1.0.0" data-group="CommonApi" data-name="GetExchange" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - Get Current Exchange Rate</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>Get current exchange rate from CAD to CNY provided by WeChat(CAD 1=CNY ?). This exchange rate shown is for reference only, please refer to the real time exchange rate when processing the actual transaction.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner Code</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>Exchange rate</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-OrderStatus">
+        
+  <article id="api-CommonApi-OrderStatus-1.0.1" data-group="CommonApi" data-name="OrderStatus" data-version="1.0.1">
+    <div class="pull-left">
+      <h1>CommonApi - Query Order Status</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>Including QR Code orders, JSAPI orders and Retail orders</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>PAYING: Waiting for payment</li>     <li>CREATE_FAIL: Fail to create order</li>     <li>CLOSED: Order closed</li>     <li>PAY_FAIL: Payment failed</li>     <li>PAY_SUCCESS: Payment succeeded</li> </ul> Use the same order id to call create order API can renew the order. PAYING, PAY_SUCCESS orders cannot be renewed.
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order id in AlphaPay, which is also WeChat order id. The final order id which is paid may be different from this one</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Order amount, which uses the base unit of current currency</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Actual paid amount.(Equal to total fee at the moment. After coupon feature is finished, this value may be different. )</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>Exchange Rate used while trading. 1CAD=?CNY</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency. Default value is CAD.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">channel</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Channel. Alipay,Wechat,Bestpay.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-RefundOrder">
+        
+  <article id="api-CommonApi-RefundOrder-1.0.0" data-group="CommonApi" data-name="RefundOrder" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - Apply for Refund</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>One payment order can create more than one refund orders. Total amount of all refund orders must be less than or equal to the actual paid amount and the currency of refund order is the same as the payment order.</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner payment order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner refund order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Required, Refund amount. Use base unit of the currency. Total amount of all refund orders must be less than actual paid amount.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>WAITING: Order is being submitted to WeChat</li>     <li>CREATE_FAILED: Fail to submit to WeChat</li>     <li>SUCCESS: Submission succeeded</li>     <li>FAILED: Refund failed</li>     <li>FINISHED: Refund success(funds has already been returned to user's account)</li>     <li>CHANGE: Refund can not return to user's account. Manual operation is required</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay Refund id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner refund id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">amount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Refund amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Refund currency</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Payment order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Payment order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_NOT_PAID</td>
+            <td>
+            <p>Payment order is not paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-RefundQuery">
+        
+  <article id="api-CommonApi-RefundQuery-1.0.0" data-group="CommonApi" data-name="RefundQuery" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - Query Refund Order Status</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner payment order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner refund order id</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>WAITING: Order is being submitted to WeChat</li>     <li>CREATE_FAILED: Fail to submit to WeChat</li>     <li>SUCCESS: Submission succeeded</li>     <li>FAILED: Refund failed</li>     <li>FINISHED: Refund succeeded(funds have already been returned to user's account)</li>     <li>CHANGE: Refund can not return to user's account. Manual operation is required</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay Refund id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner refund id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">amount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>refund Amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Refund currency</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>Payment order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>Payment order is not belong to this partner</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_NOT_PAID</td>
+            <td>
+            <p>Payment order is not paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">REFUND_NOT_EXIST</td>
+            <td>
+            <p>Refund order does not exist</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">REFUND_MISMATCH</td>
+            <td>
+            <p>Refund order is not belong to this payment order</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-ListOrder">
+        
+  <article id="api-CommonApi-ListOrder-1.0.0" data-group="CommonApi" data-name="ListOrder" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - Check Orders</h1>
+    </div>
+ 
+    <div class="clearfix"></div>
+
+
+      <p></p><p>Get a list of orders. This api may change in the future.</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Partner code</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">date</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Payment order creation date,which is formatted in 'yyyyMMdd' ,PDT+10. Query all orders if not provided</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">status</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order status</p> <ul>     <li>ALL: All orders, including orders not paid and closed</li>     <li>PAID: Only paid orders. including orders which have refunds.</li>     <li>REFUNDED: Only orders which have refunds</li> </ul>
+            <p class="default-value">Default value: <code>ALL</code></p>
+            
+            <p class="type-size">Allowed values:
+                <code>'ALL'</code>, 
+                <code>'PAID'</code>, 
+                <code>'REFUNDED'</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">page</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Page number. start with 1</p>
+            <p class="default-value">Default value: <code>1</code></p>
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">limit</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Rows per page</p>
+            <p class="default-value">Default value: <code>10</code></p>
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>Required, PDT timestamp in milliseconds</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Required, Sign</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ROOT</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Execution result</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">data</td>
+              <td>
+                JSON[]
+              </td>
+            <td>
+            <p>Orders list</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pagination</td>
+              <td>
+                JSON
+              </td>
+            <td>
+            <p>Pagination information</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">analysis</td>
+              <td>
+                JSON
+              </td>
+            <td>
+            <p>Payment analysis</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>data</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay Order ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner Order ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Order amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Actual paid amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10. will be null if not paid</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">status</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>order status</p> <ul>     <li>SUBMITTING: Submitting to wechat</li>     <li>SUBMIT_FAIL: Submission failed</li>     <li>WAITING_PAYMENT: Submission succeeded and wait for payment</li>     <li>CLOSED: Order closed</li>     <li>PAYMENT_FAIL: Payment failed</li>     <li>SUCCESS: Payment succeeded</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_body</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Order description</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">gateway</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>QR Code: QR Code payment. User use WeChat client to scan the QR Code provided to finish the payment</li>     <li>JSAPI: JSAPI payment. User use WeChat client to open the payment page and finish the payment in page</li>     <li>OFFLINE: Offline payment. Partner uses equipments to scan user's payment QR Code or BarCode provided by WeChat Wallet</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner name</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_fee</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Total refund amount of this order</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>pagination</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">page</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Page number,start with 1</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">limit</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Rows per page</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">totalCount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Total rows</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">totalPages</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Total pages</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>analysis</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">order_count</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Order count of successful payment (including orders which have refunds)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Total amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Actual paid amount</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Error Code</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Name</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>Exception inside system</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>Partner code is invalid or there is no partner associated with this code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>Sign expired, the difference between time and the server time is more than 5 minutes</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>Invalid sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>Parameters are invalid. See return_msg for more details.</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>Gateway payment permission has not been enabled for this partner</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-API">
+    <h1>API</h1>
+      <p></p><p>API List</p><p></p>
+      <div id="api-API-PayNotice">
+        
+  <article id="api-API-PayNotice-1.0.0" data-group="API" data-name="PayNotice" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>API - Payment Success Notice</h1>
+    </div>
+    
+    <div class="clearfix"></div>
+
+
+      <p></p><p>If notify_url is provided when order is created. System will post request to this url when the payment succeeds. Request method is POST. Different from Server APIs, sign parameters will be included in json entity. Partner system shall valid them to prevent fake requests. Partner system shall response with correct parameters. If AlphaPay did not receive valid response, system will regard as receiving failed and retry the notification. System will retry up to3 times. Partner system shall be able to handle the repeated requests.</p><p></p>
+    <span class="type type__post">post</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://pay.alphapay.ca/notify_url</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            
+            <th style="width: 70%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>JSON keys</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                long
+              </td>
+            <td>
+            <p>PDT timestamp in millis</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Random string</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Sign</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Partner order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay order id</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Order amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>Actual paid amount</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>Exchange Rate used while trading. 1CAD=?CNY</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Currency,CAD</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">channel</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Payment Channel Alipay、Wechat、Bestpay</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10.</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">Field</th>
+            <th style="width: 10%">Type</th>
+            <th style="width: 60%">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+</div>
+      <div id="footer"></div>
+    
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer calss="footer" >
+    
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+            <br>	
+            <p class="copyright text-center">&copy; 2017-2018. All right reserved by AlphaPay.</p>
+            </div>
+            <div class="col-md-3">
+                <br>
+                <p><img src="/images/wx.png"> <img src="/images/icon/facebook.png"> <img src="/images/icon/twitter.png"> <img src="/images/icon/youtube.png"></p>
+            </div>
+        </div>
+
+    
+</footer>
+
+
+
+    </body>
+    </html>
