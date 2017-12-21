@@ -1425,6 +1425,9 @@ input[type=file] {
 }
 
 @media screen and (max-width: 800px) {
+  #servicenav{
+    display: none;
+  }
   .companyinformation{
     font-size: 30px;
   }
@@ -1443,6 +1446,7 @@ input[type=file] {
   }
 
   .contactinfo{
+    font-size: 30px;
     width: 100%;
   }
 
@@ -1452,5 +1456,8 @@ input[type=file] {
 
   .from-control{
     font-size: 25px;
+  }
+  #leavebt{
+    width: 100%;
   }
 }
