@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <link rel="shortcut icon" href="images/icon.png">
-	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
 	<!-- Animate.css -->
@@ -50,7 +50,7 @@
 	</nav>
 	
 
-		<div class="message">
+		<div id="message">
       <br>
       <br>
          <form class="container" id="leavemess" role="form" action="mail.php"  method="POST" enctype="multipart/form-data">
@@ -59,30 +59,30 @@
         
             <div class="row">
                 <h4>Company Information</h4>
-              <div class="col-md-6 mb-5">
+              <div class="col-md-6 mb-5 companyinformation">
                 <label for="m01">Registeration Name</label>
                 <input type="text" class="form-control" id="message1" name="registname" placeholder="Registeration Name" required>
               </div>
-              <div class="col-md-6 mb-5">
+              <div class="col-md-6 mb-5 companyinformation">
                 <label for="m02">Trade name</label>
                 <input type="text" class="form-control" id="message2" name="tradename" placeholder="Trade Name" required>
               </div>
-              <div class="col-md-12 mb-5">
+              <div class="col-md-12 mb-5 companyinformation">
                  <label for="m02">Short Name</label>
                 <input type="text" class="form-control" id="message2" name="shortname" placeholder="Short Name" required>
               </div>
 
-              <div class="col-md-6 mb-5">
+              <div class="col-md-6 mb-5 companyinformation">
                 <label for="m02">Address</label>
                 <input type="text" class="form-control" id="message2" name="address"  required>
               </div>
 
-              <div class="col-md-6 mb-5">
+              <div class="col-md-6 mb-5 companyinformation">
                    <label for="m02">Service Phone</label>
                 <input type="text" class="form-control" id="message2" name="sphone" required>
               </div>
 
-              <div class="col-md-12 mb-5">
+              <div class="col-md-12 mb-5 companyinformation">
                   <label for="m02">Description</label>
                    <textarea class="form-control" rows="5" id="messgae7" name="des" placeholder=""></textarea>
              </div>
@@ -171,7 +171,7 @@
                 <h4>Document Uploads</h4>
               <div class="col-md-6 mb-5 productandservice">
                     <label for="m35">Upload Notice of Articles</label>
-                    <input type="file" name="image">
+                    <input type="file" name="image"><br>
         
                  
               </div>
@@ -202,7 +202,7 @@
           </form>
         </div>
         <script>
-          $('.apply').on('keypress', function(e) {
+          $('#message').on('keypress', function(e) {
           return e.which !== 13;
         });
           </script>

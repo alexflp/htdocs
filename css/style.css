@@ -1423,3 +1423,13 @@ input[type=file] {
   box-shadow: inset .25em .25em .25em rgba(255,255,255, .5), inset -.1em -.1em .1em rgba(0,0,0, 0.1);
   cursor: text;
 }
+
+@media screen and (max-width: 800px) {
+  .companyinformation{
+    font-size: 40px;
+  }
+
+  .industry{
+    font-size: 40px;
+  }
+}
