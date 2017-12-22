@@ -1412,28 +1412,18 @@ body {
     font-size: 20px;
 }
 
-input[type=file] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #EEE;
-  background: linear-gradient(to top, #FFF, #DDD);
-  border: thin solid rgba(0,0,0, .5);
-  border-radius: .25em;
-  box-shadow: inset .25em .25em .25em rgba(255,255,255, .5), inset -.1em -.1em .1em rgba(0,0,0, 0.1);
-  cursor: text;
-}
+
 
 @media screen and (max-width: 800px) {
   #servicenav{
     display: none;
   }
   .companyinformation{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .industry{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   input[type=text]{
@@ -1442,11 +1432,11 @@ input[type=file] {
   }
 
   .productandservice{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .contactinfo{
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
   }
 
@@ -1459,5 +1449,12 @@ input[type=file] {
   }
   #leavebt{
     width: 100%;
+    background-color: black;
+    color: white;
   }
+
+}
+
+.owl-dot{
+  display: none;
 }

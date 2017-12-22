@@ -139,7 +139,7 @@ Content-Type in the request header shall be set to application/json for all PUT/
 <p>Parameters:</p>
 <ul>
 <li>partner_code: Code for partner, including four uppercase letters or numbers.</li>
-<li>time: PDT timestamp in milliseconds. Take current timestamp of PDT. Data type is Long. The difference between time and AlphaPay server time should be less than 5 minutes.</li>
+<li>time: UTC timestamp in milliseconds. Take current timestamp of UTC. Data type is Long. The difference between time and AlphaPay server time should be less than 5 minutes.</li>
 <li>nonce_str: Random string. No limit for length. URL-Safe characters are required. The proposed length is 10-30 characters.</li>
 <li>credential_code: Partner credential code for development provided by AlphaPay system. Keep it safe and never disclose it to the public. If compromised, contact us to change it.</li>
 </ul>
@@ -356,7 +356,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -702,7 +702,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -1018,7 +1018,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -1357,7 +1357,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -1581,7 +1581,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -1897,7 +1897,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -2221,7 +2221,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -2520,7 +2520,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -2633,7 +2633,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, UTC+10)</p>
             
             
                         </td>
@@ -2644,7 +2644,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, UTC+10)</p>
             
             
                         </td>
@@ -2983,7 +2983,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -3309,7 +3309,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -3560,7 +3560,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -3684,7 +3684,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            <p>Time when order is paid(yyyy-MM-dd HH:mm:ss, UTC+10)</p>
             
             
                         </td>
@@ -3695,7 +3695,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, PDT+10)</p>
+            <p>Time when order is created(according to the latest order)(yyyy-MM-dd HH:mm:ss, UTC+10)</p>
             
             
                         </td>
@@ -3968,7 +3968,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -4305,7 +4305,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -4637,7 +4637,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Payment order creation date,which is formatted in 'yyyyMMdd' ,PDT+10. Query all orders if not provided</p>
+            <p>Payment order creation date,which is formatted in 'yyyyMMdd' ,UTC+10. Query all orders if not provided</p>
             
             
                         </td>
@@ -4686,7 +4686,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 Long
               </td>
             <td>
-            <p>Required, PDT timestamp in milliseconds</p>
+            <p>Required, UTC timestamp in milliseconds</p>
             
             
                         </td>
@@ -4844,7 +4844,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10</p>
+            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', UTC+10</p>
             
             
                         </td>
@@ -4855,7 +4855,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10. will be null if not paid</p>
+            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', UTC+10. will be null if not paid</p>
             
             
                         </td>
@@ -5194,7 +5194,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 long
               </td>
             <td>
-            <p>PDT timestamp in millis</p>
+            <p>UTC timestamp in millis</p>
             
             
                         </td>
@@ -5304,7 +5304,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10</p>
+            <p>Time when order is created, which is formatted in 'yyyy-MM-dd HH:mm:ss', UTC+10</p>
             
             
                         </td>
@@ -5315,7 +5315,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
                 String
               </td>
             <td>
-            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', PDT+10.</p>
+            <p>Time when order is paid, which is formatted in 'yyyy-MM-dd HH:mm:ss', UTC+10.</p>
             
             
                         </td>

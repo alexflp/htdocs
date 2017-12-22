@@ -43,13 +43,21 @@
 		   
 	    </div>
 	</nav>
-	
+  <div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="/index.php"><span style="color: black;">Home</span></a></li>
+      <li><a href="/service.html"><span style="color: black;">Services</span></a></li>
+      <li><a href="/api/en.html"><span style="color: black;">API</span></a></li>
+    </ul>
+  </div>
 
 		<div id="message">
       <br>
       <br>
          <form class="container" id="leavemess" role="form" action="mail.php"  method="POST" enctype="multipart/form-data">
-          <h3  style="text-align: center;">Apply</h3>
+          <h3  style="text-align: center;">Merchant Application Form</h3>
           <br>
         
             <div class="row">
@@ -147,46 +155,50 @@
             <div class="row">
                 <h4>Products and Services</h4>
               <div class="col-md-3 mb-5 productandservice">
-                   <input type="checkbox" name="service" value="wonline"> Wechat Online
+                   <input type="checkbox" name="service[]" value="wonline"> Wechat Online
               </div>
               <div class="col-md-3 mb-5 productandservice">
-                   <input type="checkbox" name="service" value="woffline"> Wechat Offline
-              </div>
-
-              <div class="col-md-3 mb-5 productandservice">
-                  <input type="checkbox" name="service" value="aonline"> AliPay Online
+                   <input type="checkbox" name="service[]" value="woffline"> Wechat Offline
               </div>
 
               <div class="col-md-3 mb-5 productandservice">
-                  <input type="checkbox" name="service" value="aoffline"> AliPay Offline
+                  <input type="checkbox" name="service[]" value="aonline"> AliPay Online
+              </div>
+
+              <div class="col-md-3 mb-5 productandservice">
+                  <input type="checkbox" name="service[]" value="aoffline"> AliPay Offline
               </div>
             </div>
             <br>
             <div class="row">
                 <h4>Document Uploads</h4>
               <div class="col-md-6 mb-5 productandservice">
-                    <label for="m35">Upload Notice of Articles</label>
-                    <input type="file" name="image"><br>
+                    <label for="m35">Upload Certificate of Incorporation</label>
+                    <input type="file" name="image">
         
                  
               </div>
+              
               <div class="col-md-6 mb-5 productandservice">
                       <label for="m36">Upload Copy of Photo ID</label>
-                      <input type="file" name="photoid"><br>
+                      <input type="file" name="photoid">
                      
               </div>
-
+              
               <div class="col-md-6 mb-5 productandservice">
                     <label for="m37">Upload a VOID cheque</label>
-                    <input type="file" name="cheque"><br>
+                    <input type="file" name="cheque">
+              
+                
                    
               </div>
-
+              
               <div class="col-md-6 mb-5 productandservice">
                     <label for="m38">Picture Store Front Photo</label>
-                    <input type="file" name="frontphoto"><br>
+                    <input type="file" name="frontphoto">
                
               </div>
+              
             </div>
             <br>
             <br>

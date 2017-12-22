@@ -1,49 +1,5 @@
 <?php 
 
-// $target_dir = "uploads/";
-// $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-// print_r($target_file);
-// $uploadOk = 1;
-// $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-// // Check if image file is a actual image or fake image
-// if(isset($_POST["submit"])) {
-//     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-//     if($check !== false) {
-//         echo "File is an image - " . $check["mime"] . ".";
-//         $uploadOk = 1;
-//     } else {
-//         echo "File is not an image.";
-//         $uploadOk = 0;
-//     }
-// }
-// // Check if file already exists
-// if (file_exists($target_file)) {
-//     echo "Sorry, file already exists.";
-//     $uploadOk = 0;
-// }
-// // Check file size
-// if ($_FILES["fileToUpload"]["size"] > 500000) {
-//     echo "Sorry, your file is too large.";
-//     $uploadOk = 0;
-// }
-// // Allow certain file formats
-// if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-// && $imageFileType != "gif" ) {
-//     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-//     $uploadOk = 0;
-// }
-// // Check if $uploadOk is set to 0 by an error
-// if ($uploadOk == 0) {
-//     echo "Sorry, your file was not uploaded.";
-// // if everything is ok, try to upload file
-// } else {
-//     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-//         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-//     } else {
-//         echo "Sorry, there was an error uploading your file.";
-//     }
-// }
-
 // if(isset($_FILES['image'])){
 	$errors= array();
 	$file_name = $_FILES['image']['name'];
@@ -72,7 +28,7 @@
 
 	$errors= array();
 	$file_name2 = $_FILES['photoid']['name'];
-	$file_size2 =$_FILES['photid']['size'];
+	$file_size2 =$_FILES['photoid']['size'];
 	$file_tmp2 =$_FILES['photoid']['tmp_name'];
 	$file_type2=$_FILES['photoid']['type'];
 	$file_ext2=strtolower(end(explode('.',$_FILES['photoid']['name'])));
@@ -181,9 +137,19 @@ $mail->addAddress("it@alphapay.ca");
 
 $mail->isHTML(true);
 
+$servicelist=":";
+
+if(!empty($_POST['service']))
+{
+
+	foreach($_POST['service'] as $selected)
+	{
+		$servicelist=$servicelist." ".$selected." ";
+	}
+};
 
 $mail->Subject = 'Message';
-$mail->Body    = $_POST['shortname']." ".$_POST['shortname']." ".$_POST['tradename']." ".$_POST['title']." ".$_POST['phone']." ".$_POST['email']." ".$_POST['des'];
+$mail->Body    ="Registeration Name: ". $_POST['registname']."<br> Short Name: ".$_POST['shortname']."<br> Trade Name: ".$_POST['tradename']."<br> Address: ".$_POST['address']."<br> Service Phone ".$_POST['sphone']."<br> Description ".$_POST['des']."<br> Industry ".$_POST['industry']."<br> Name ".$_POST['name']."<br> Title ".$_POST['title']."<br> Phone ".$_POST['phone']."<br> Email ".$_POST['email']." <br> Service ".$servicelist;
 $mail->addAttachment("uploads/".$file_name);
 $mail->addAttachment("uploads/".$file_name2);
 $mail->addAttachment("uploads/".$file_name3);
