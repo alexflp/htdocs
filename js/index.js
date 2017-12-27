@@ -50,37 +50,37 @@ $(document).ready(function(){
 
 
 
-$("#A1, #A2").click(function() {
+// $("#A1, #A2").click(function() {
     
-    $('.overlay_div').hide();
+//     $('.overlay_div').hide();
 
-    var classname = $(this).attr('class');
-    switch (classname) {
-        case "pica":
-            $('#overlay_div_a').show();
+//     var classname = $(this).attr('class');
+//     switch (classname) {
+//         case "pica":
+//             $('#overlay_div_a').show();
             
-            break;
-        case "picb":
-            $('#overlay_div_b').show();
+//             break;
+//         case "picb":
+//             $('#overlay_div_b').show();
             
-            break;
-         case "picc":
-            $('#overlay_div_c').show();
-            break;
-         case "picd":
-            $('#overlay_div_d').show();
-            break;
-         case "pice":
-            $('#overlay_div_e').show();
-            break;
-        case "picf":
-            $('#overlay_div_f').show();
-            break;
-         case "picg":
-            $('#overlay_div_g').show();
-            break;
-    }
-});
+//             break;
+//          case "picc":
+//             $('#overlay_div_c').show();
+//             break;
+//          case "picd":
+//             $('#overlay_div_d').show();
+//             break;
+//          case "pice":
+//             $('#overlay_div_e').show();
+//             break;
+//         case "picf":
+//             $('#overlay_div_f').show();
+//             break;
+//          case "picg":
+//             $('#overlay_div_g').show();
+//             break;
+//     }
+// });
 
 
 // $(window).on('haschange',function(){

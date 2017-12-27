@@ -56,8 +56,9 @@
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="/" data-nav-section="home"><span>Home</span></a></li>
-		            <li><a href="/service.html"><span>Services</span></a></li>
+		            <li><a href="/channel/qrcode.html"><span>Solution</span></a></li>
 		            <li><a href="/api/en.html"><span>API</a></li>
+		            <li><a href="#contact"><span>Contact</a></li>
 		            
 		          </ul>
 		        </div>
@@ -116,34 +117,41 @@
 			<div class="row online">
 			
 			
-						<div class="col-md-3 online">
-							<h4><a href="service.html#overlay_div_a">
+						<div class="col-md-2 col-md-offset-1 online">
+							<p><a href="/channel/qrcode.html">
 								<img src="images/online1.png"><br>
-						 	QR Code
-							</a></h4>
+						 	QR Code Gateway
+							</a></p>
 							
 						</div>
 						
-						<div class="col-md-3 online">
-							<h4><a href="service.html#overlay_div_b">
+						<div class="col-md-2 online">
+							<p><a href="/channel/jsapi.html">
 								<img src="images/online2.png"><br>
-								JS API
-							</a></h4>
+								JS API Gateway
+							</a></p>
 						</div>
-						
-						<div class="col-md-3 online">
-							<h4><a href="service.html#overlay_div_c">
+						<div class="col-md-2 online">
+							<p><a href="/channel/h5.html">
 							<img src="images/online3.png"><br>
+							H5 Gateway</a>
+							</p>
+						</div>
+						<div class="col-md-2 online">
+							<p style="color: #d51212;">
+							<img src="images/online5.png"><br>
 							3rd Party Gateway
-						</a></h4>
+						</p>
 						</div>
 						
-						<div class="col-md-3 online">
-							<h4><a href="service.html#overlay_div_d">
-							<img src="images/online3.png"><br>
+						<div class="col-md-2 online">
+							<p style="color:#d51212;">
+							<img src="images/online4.png"><br>
 							APP Gateway
-						</a></h4>
+							</p>
 						</div>
+
+						
 						
 
 
@@ -154,31 +162,31 @@
 			<h3>Retail Channel</h3>
 			<br>
 			<div class="row offline">
-				<div class="col-md-3 offline">
-					<h4><a href="service.html#overlay_div_e">
+				<div class="col-md-2 col-md-offset-1 offline">
+					<p><a href="/channel/merchant.html">
 							<img src="images/offline1.png"><br>
 							Merchant QR Code
-						</a></h4>
+						</a></p>
 				</div>
 						
-						<div class="col-md-3 offline">
+						<div class="col-md-2 offline">
 
-							<h4><a href="service.html#overlay_div_f">
+							<p><a href="/channel/pos.html">
 							<img src="images/offline2.png"><br>
 							POS Machine
-						</a></h4>
+						</a></p>
 						</div>
 						
-						<div class="col-md-3 offline">
-								<h4><a href="service.html#overlay_div_f">
+						<div class="col-md-2 offline">
+								<p><a href="/channel/retail.html">
 							<img src="images/offline3.png"><br>
 							Retail EFTPos API
-						</a></h4>
+						</a></p>
 						</div>
 						
-						<div class="col-md-3 offline">
+						<div class="col-md-4 offline" style="text-align: center;">
 							<br>
-							<p class=""><a href="/apply.html" class="btn btn-primary btn-lg">APPLY</a></p>
+							<p class=""><a href="/apply.html" class="btn btn-primary btn-lg" style="width: 50%; ">APPLY</a></p>
 							
 						</div>
 
@@ -213,7 +221,7 @@
 
 					<div class="col-md-6" style="text-align: center;">
 						<br>
-						<img src="images/pay-ser.jpeg">
+						<img class="pictophone" src="images/pay-ser.jpeg">
 
 					</div>
 		
@@ -248,7 +256,7 @@
 					</div>
 				</div>
 					<br>
-				<div class="col-md-6">
+				<div class="col-md-6 pictophone">
 					<div class="row">
 						<h3>Chinese Preferred Payment Modes</h3>
 						<div class="col-md-10">
@@ -416,7 +424,7 @@
 						</div>
 						<div class="row animate-box" data-animate-effect="fadeIn">
 							<div class="col-md-6">
-								<img src="images/help.png">
+								<img class="pictophone" src="images/help.png">
 							</div>
 							<div class="col-md-6">
 								Using WeChat Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
@@ -424,7 +432,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-						<img src="images/bus.jpg">
+						<img class="pictophone" src="images/bus.jpg">
 
 					</div>
 				</div>
@@ -597,7 +605,7 @@
 		</div>
 	</div>
 	
-	<div class="fh5co-cta" style="background-image:url(images/hero.jpg)">
+	<div class="fh5co-cta" id="contact" style="background-image:url(images/hero.jpg)">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-12 text-center">
