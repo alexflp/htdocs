@@ -1413,15 +1413,29 @@ body {
     font-size: 20px;
 }
 
+#phonenav.navbar{
+  display: none;
+}
 
+
+.phonechannel{
+  display: none;
+}
+
+
+.jumbotron{
+  display: none;
+}
 @media screen and (max-width: 768px) {
-  html{
+
+
+  .row{
     width: 100%;
+    margin-left: 0px;
   }
 
-  body{
-    width: 100%;
-    font-size:25px;
+  #servicenav{
+    display: none;
   }
   .owl-carousel{
     display: none;
@@ -1469,21 +1483,50 @@ body {
   #welcome{
     padding-top: 10%;;
   }
+
   .pictophone{
     width:100%;
     height: auto;
   }
 
- 
+  .phnetext{
+    font-size: 17px;
+  }
 
+  #phonenav.navbar{
+    display: block;
+    
+  }
+  .hidechannel{
+    display: none;
+  }
+
+  .phonechannel{
+    display: block;
+  }
+
+  #slider{
+    display: none;
+  }
+
+  #fh5co-header{
+    display: none;
+  }
+  .jumbotron{
+    display: block;
+
+    background-image: url("/images/jup.jpeg");
+    color:white;
+  }
 }
 
 .owl-dot{
-  display: none;
+  display: ;
 }
 
 .choosen{
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px #ececec;
+
 }

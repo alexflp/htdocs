@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="/css/bootstrap.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="/css/style.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -49,10 +49,36 @@
 		   
 	    </div>
 	</nav>
+	<nav id="phonenav" class="navbar navbar-default">
+		<div class="container-fluid">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/index.php"><img id="lrg-logo" src="/images/alphapay-red.png"></a>
+		  </div>
+	  
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="/index.php" data-nav-section="home"><span style="color: #d51212;">Home</span></a></li>
+				<li><a href="/channel/merchant.html"><span style="color: #d51212;">Solution</span></a></li>
+				<li><a href="/api/en.html"><span style="color: #d51212;">API</span></a></li>
+				<li><a href="/index.php#contact"><span style="color: #d51212;">Contact</span></a></li>
+		
+			</ul>
+	
+		
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	  </nav>
 
 
-
-	<div id="welcome">
+	<div class="hidechannel" id="welcome">
 				<div class="row">
 					<div class="col-md-3 col-md-offset-2" style="background-color:#d51212;">
 						<h5 style="text-align: center;  color: white;">Retail Channels</h5>
@@ -114,10 +140,75 @@
 					</div>
 					
 				
-			
+				</div>
 
 			</div>
 	</div>
+
+	<div class="phonechannel">
+		<div class="row phoneonlinechannel">
+			<div class="col-sm-12">
+				<h5>Online Channels</h5>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/qrcode.html">
+					<img src="/images/smallicon/online1.png"><br>
+					 QR Code Gateway</a></p>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/jsapi.html">
+				<img src="/images/smallicon/online2.png"><br> JS API Gateway</a></p>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/h5.html">
+				<img src="/images/smallicon/online5.png"><br>
+				H5 Gateway</a></p>
+			</div>
+			
+		
+
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="color: #d51212; font-size:10px;"><!-- <a href="#overlay_div_c"> -->
+				<img src="/images/smallicon/online3.png"><br>
+				3rd Party Gateway</a></p>
+			</div>	
+			
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="color: #d51212; font-size:10px;"><!-- <a href="#overlay_div_d"> -->
+				<img src="/images/smallicon/online4.png"><br>
+				APP Gateway</a></p>
+			</div>
+			
+
+		</div>
+
+		<div class="row phoneofflinechannel">
+			<div class="col-sm-12">
+				<h5>Retail Channels</h5>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/merchant.html">
+					<img src="/images/smallicon/offline1.png"><br>
+					Merchant QR Code</a></p>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/pos.html">
+				<img src="/images/smallicon/offline2.png"><br>POS Machine</a></p>
+			</div>
+			<div class="col-xs-6" style="text-align: center;">
+				<p style="font-size:10px;"><a href="/channel/retail.html">
+				<img src="/images/smallicon/offline3.png"><br>
+				Retail EFTPos API</a></p>
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2" >
 			   	
