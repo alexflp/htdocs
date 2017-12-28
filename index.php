@@ -424,7 +424,7 @@
 						</div>
 						<div class="row animate-box" data-animate-effect="fadeIn">
 							<div class="col-md-6">
-								<img class="pictophone" src="images/help.png">
+								<img class="pictophone" src="images/help.PNG">
 							</div>
 							<div class="col-md-6">
 								Using WeChat Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
@@ -477,7 +477,7 @@
 
 						<div class="col-md-2 partners">
 							<P><a href="https://www.jdpay.com/home/page">
-							<img src="images/jd.png"></a></P>
+							<img src="images/jd.PNG"></a></P>
 						</div>
 
 						<div class="col-md-2 partners" style="vertical-align: middle;">
@@ -538,7 +538,7 @@
 
 						<div class="col-md-2 partners">
 							<p>
-								<img src="images/lecan.png"></p>
+								<img src="images/lecan.PNG"></p>
 						</div>
 
 						<div class="col-md-2 partners">
