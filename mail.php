@@ -20,7 +20,7 @@
 	
 	if(empty($errors)==true){
 	   move_uploaded_file($file_tmp,"uploads/".$file_name);
-	   echo "Success";
+	//    echo "Success";
 	}else{
 	   print_r($errors);
 	}
@@ -45,7 +45,7 @@
 
 	if(empty($errors)==true){
 	move_uploaded_file($file_tmp2,"uploads/".$file_name2);
-	echo "img2 Success";
+	// echo "img2 Success";
 	}else{
 	print_r($errors);
 	}
@@ -69,7 +69,7 @@
 	
 	if(empty($errors)==true){
 	   move_uploaded_file($file_tmp3,"uploads/".$file_name3);
-	   echo "img3 Success";
+	//    echo "img3 Success";
 	}else{
 	   print_r($errors);
 	}
@@ -93,7 +93,7 @@
 	
 	if(empty($errors)==true){
 	   move_uploaded_file($file_tmp4,"uploads/".$file_name4);
-	   echo "img4 Success";
+	//    echo "img4 Success";
 	}else{
 	   print_r($errors);
 	}
@@ -117,7 +117,7 @@ $mail->SMTPOptions = array(
 //Enable SMTP debugging. 
 $mail->SMTPDebug = 0;                               
 //Set PHPMailer to use SMTP.
-$mail->isSMTP();            
+//  $mail->isSMTP();            
 //Set SMTP host name                          
 $mail->Host = "smtp.gmail.com";
 //Set this to true if SMTP host requires authentication to send email
@@ -160,7 +160,7 @@ if(!$mail->send())
 } 
 else 
 {
-    echo "Message has been sent successfully";
+    // echo "Message has been sent successfully";
 }
 
 ?>
@@ -195,32 +195,60 @@ else
 	</head>
 
 	<body>
-		<nav id="servicenav" class="navbar navbar-default navbar-fixed-top">
-	    <div class="container">
-	        <!-- Brand and toggle get grouped for better mobile display -->
-	        <div class="navbar-header">
-	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-	                <span class="sr-only">Toggle navigation</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	            </button>
-	            <a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="images/alphapay-white.png"></a>
-	        </div>
-	       
-	     	
-		          <ul class="nav navbar-nav navbar-right">
-		            <li><a href="/index.php" data-nav-section="home"><span style="color: white;">Home</span></a></li>
-		            <li><a href="/service.html"><span style="color: white;">Services</span></a></li>
-                <li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
-		            
-		          </ul>
-		   
-	    </div>
-	</nav>
+	<nav id="servicenav" class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="/images/alphapay-white.png"></a>
+		</div>
+	   
+		 
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="/index.php" data-nav-section="home"><span style="color: white;">Home</span></a></li>
+				<li><a href="/channel/qrcode.html"><span style="color: white;">Solution</span></a></li>
+				<li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
+				<li><a href="/index.php#contact"><span style="color: white;">Contact</span></a></li>
+				
+			  </ul>
+	   
+	</div>
+</nav>
+<nav id="phonenav" class="navbar navbar-default">
+	<div class="container-fluid">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/index.php"><img id="lrg-logo" src="/images/alphapay-red.png"></a>
+	  </div>
+  
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li><a href="/index.php" data-nav-section="home"><span style="color: #d51212;">Home</span></a></li>
+			<li><a href="/channel/merchant.html"><span style="color: #d51212;">Solution</span></a></li>
+			<li><a href="/api/en.html"><span style="color: #d51212;">API</span></a></li>
+			<li><a href="/index.php#contact"><span style="color: #d51212;">Contact</span></a></li>
 	
-		<div class="reply">
-			Hello,<?php echo $_POST['name'];?>. We will contact you soon.<br>
+		</ul>
+
+	
+	  </div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+  </nav>
+	
+		<div id="fh5co-product-screenshots">
+			<h3 style="text-align:center;"> Hello,<?php echo $_POST['name'];?>. We will contact you soon.<br></h3
 		</div>
 
 	    

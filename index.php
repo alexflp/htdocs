@@ -373,7 +373,7 @@
 					<div class="row" id="confour">
 						<div class="col-md-10">
 							<div class="col-sm-6 mb-3">
-								<p style="text-align: left;"><img src="images/jd.png">
+								<p style="text-align: left;"><img src="images/jd.PNG">
 									<br>JD.com, Inc. (Chinese: 京东; pinyin: Jīngdōng), also known as Jingdong and formerly called 360buy, is a Chinese e-commerce company headquartered in Beijing. It is one of the two largest B2C online retailers in China by transaction volume and revenue,</p>
 
 							</div>
