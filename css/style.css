@@ -1473,9 +1473,12 @@ body {
     height: auto;
   }
 
-  .choosen{
-    display: none;
+  .inimg{
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
   }
+
 }
 
 .owl-dot{
