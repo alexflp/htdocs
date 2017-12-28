@@ -1369,7 +1369,8 @@ body {
 }*/
 
 .inimg{
-  width: 100%;
+  width: 75%;
+  margin-left: 15%;
   height: auto;
 }
 
@@ -1413,14 +1414,14 @@ body {
 }
 
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   html{
     width: 100%;
   }
 
   body{
     width: 100%;
+    font-size:25px;
   }
   .owl-carousel{
     display: none;
@@ -1473,11 +1474,7 @@ body {
     height: auto;
   }
 
-  .inimg{
-    width: 70%;
-    margin-left: 15%;
-    height: auto;
-  }
+ 
 
 }
 
