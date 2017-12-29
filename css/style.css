@@ -1374,6 +1374,11 @@ body {
   height: auto;
 }
 
+.inimgwidth{
+  width:90%;
+  margin-left: 5%;
+  height: auto;
+}
 #servicenav{
   background-color: #d51212;
   padding-bottom: 1px;
@@ -1484,6 +1489,18 @@ body {
     padding-top: 10%;;
   }
 
+  #welcome p{
+    font-size: 12px;
+  }
+
+  a.btn.btn-primary.showicon{
+    width: 100%;
+  }
+
+  .showicon{
+    width: 100%;
+  
+  }
   .pictophone{
     width:100%;
     height: auto;
@@ -1518,11 +1535,21 @@ body {
     background-image: url("/images/jup.jpeg");
     color:white;
   }
+
+  h2{
+    font-size:30px;
+  }
+
+  h3{
+    font-size:25px;
+  }
+
+  h4{
+    font-size: 20px;
+  }
 }
 
-.owl-dot{
-  display: ;
-}
+
 
 .choosen{
   border: 1px solid;
@@ -1530,3 +1557,13 @@ body {
   box-shadow: 5px 10px #ececec;
 
 }
+
+.pinsolution{
+  font-size: 16px;
+}
+
+.upline{
+  margin-top: 15px;
+  border-top: 3px solid #d51212;
+}
+

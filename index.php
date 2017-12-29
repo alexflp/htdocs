@@ -96,7 +96,7 @@
 
 	  <div class="jumbotron">
 	  <h1>Grow Up Your Business</h1>      
-	  <p>Collect payments in retail stores from mobile wallet users </p>
+	  <p>Market your business to the largest consumer group in the world</p>
 	  <p class="" style="margin-left:15px;"><a href="/apply.html" class="btn btn-primary btn-lg">APPLY</a></p>
 	</div>
 	<div id="slider" data-section="home">
@@ -109,7 +109,8 @@
 			    			<div class="fh5co-owl-text-wrap">
 						    	<div class="fh5co-owl-text">
 						    		<h1 class="fh5co-lead ">Grow Up Your Business</h1>
-									<h2 class="fh5co-sub-lead ">Accept Payment from Mobile Wallet Users </h3>
+									
+									<h2 class="fh5co-sub-lead ">Connecting your business to Alipay and WeChat Pay in Canada</h3>
 									<p class=""><a href="/apply.html" class="btn btn-primary btn-lg">APPLY</a></p>
 						    	</div>
 						    </div>
@@ -127,7 +128,7 @@
 			    			<div class="fh5co-owl-text-wrap">
 						    	<div class="fh5co-owl-text">
 						    		<h1 class="fh5co-lead ">Grow Up Your Business</h1>
-									<h2 class="fh5co-sub-lead ">Collect payments in retail stores from mobile wallet users </h3>
+									<h2 class="fh5co-sub-lead ">Market your business to the largest consumer group in the world</h3>
 									<p class=""><a href="/apply.html" class="btn btn-primary btn-lg">APPLY</a></p>
 						    	</div>
 						    </div>
@@ -149,36 +150,36 @@
 			<div class="row online">
 			
 			
-						<div class="col-md-2 col-md-offset-1 online">
+						<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1 online">
 							<p><a href="/channel/qrcode.html">
-								<img src="images/online1.png"><br>
+								<img class="showicon" src="images/online1.png"><br>
 						 	QR Code Gateway
 							</a></p>
 							
 						</div>
 						
-						<div class="col-md-2 online">
+						<div class="col-md-2 col-xs-2 online">
 							<p><a href="/channel/jsapi.html">
-								<img src="images/online2.png"><br>
+								<img class="showicon" src="images/online2.png"><br>
 								JS API Gateway
 							</a></p>
 						</div>
-						<div class="col-md-2 online">
+						<div class="col-md-2 col-xs-2 online">
 							<p><a href="/channel/h5.html">
-							<img src="images/online3.png"><br>
+							<img class="showicon" src="images/online3.png"><br>
 							H5 Gateway</a>
 							</p>
 						</div>
-						<div class="col-md-2 online">
+						<div class="col-md-2 col-xs-2 online">
 							<p style="color: #d51212;">
-							<img src="images/online5.png"><br>
+							<img class="showicon" src="images/online5.png"><br>
 							3rd Party Gateway
 						</p>
 						</div>
 						
-						<div class="col-md-2 online">
+						<div class="col-md-2 col-xs-2 online">
 							<p style="color:#d51212;">
-							<img src="images/online4.png"><br>
+							<img class="showicon" src="images/online4.png"><br>
 							APP Gateway
 							</p>
 						</div>
@@ -194,31 +195,31 @@
 			<h3>Retail Channel</h3>
 			<br>
 			<div class="row offline">
-				<div class="col-md-2 col-md-offset-1 offline">
+				<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1 offline">
 					<p><a href="/channel/merchant.html">
-							<img src="images/offline1.png"><br>
+							<img class="showicon" src="images/offline1.png"><br>
 							Merchant QR Code
 						</a></p>
 				</div>
 						
-						<div class="col-md-2 offline">
+						<div class="col-md-2 col-xs-2 offline">
 
 							<p><a href="/channel/pos.html">
-							<img src="images/offline2.png"><br>
+							<img class="showicon" src="images/offline2.png"><br>
 							POS Machine
 						</a></p>
 						</div>
 						
-						<div class="col-md-2 offline">
+						<div class="col-md-2 col-xs-2 offline">
 								<p><a href="/channel/retail.html">
-							<img src="images/offline3.png"><br>
+							<img class="showicon" src="images/offline3.png"><br>
 							Retail EFTPos API
 						</a></p>
 						</div>
 						
-						<div class="col-md-4 offline" style="text-align: center;">
+						<div class="col-md-4 col-xs-4 offline" style="text-align: center;">
 							<br>
-							<p class=""><a href="/apply.html" class="btn btn-primary btn-lg" style="width: 50%; ">APPLY</a></p>
+							<p class=""><a href="/apply.html" class="btn btn-primary">APPLY</a></p>
 							
 						</div>
 
@@ -233,14 +234,7 @@
 	
 		<div id="fh5co-our-services" data-section="services">
 			<div class="container">
-				<div class="row row-bottom-padded-sm animate-box">
-					<div class="col-md-12 section-heading text-center">
-					
-						<div class="row">
-							
-						</div>
-					</div>
-				</div>
+			
 				<div class="row">
 					<div class="col-md-6">
 						<h3>Key Components</h3>
@@ -258,14 +252,7 @@
 					</div>
 		
 				</div>
-				<div class="row row-bottom-padded-sm animate-box">
-					<div class="col-md-12 section-heading text-center">
-					
-						<div class="row">
-							
-						</div>
-					</div>
-				</div>
+		
 			</div>
 		</div>
 
@@ -293,20 +280,20 @@
 						<h3>Chinese Preferred Payment Modes</h3>
 						<div class="col-md-10">
 							<div class="row">
-								<div class="col-sm-4">
-									<h4 id="inone"><a class="active" href="#Solutions">WECHAT PAY</a></h4>
+								<div class="col-sm-4 col-xs-6">
+									<h4 class="pinsolution" id="inone"><a href="#Solutions">WECHAT PAY</a></h4>
 
 								</div>
-								<div class="col-sm-3 list">
+								<div class="col-sm-3 col-xs-6 list">
 								
-									<h4 id="intwo"><a href="#Solutions">ALIPAY</a></h4>
+									<h4 class="pinsolution" id="intwo"><a href="#Solutions">ALIPAY</a></h4>
 								</div>
-								<div class="col-sm-3 list">
+								<div class="col-sm-3 col-xs-6 list">
 								
-									<h4 id="inthree"><a href="#Solutions">BESTPAY</a></h4>
+									<h4 class="pinsolution" id="inthree"><a href="#Solutions">BESTPAY</a></h4>
 								</div>
-								<div class="col-sm-2 list">
-									<h4 id="infour"><a href="#Solutions">JDPAY</a></h4>
+								<div class="col-sm-2 col-xs-6 list">
+									<h4 class="pinsolution" id="infour"><a href="#Solutions">JDPAY</a></h4>
 								</div>
 						
 
@@ -347,7 +334,7 @@
 								<div class="col-sm-6 mb-3">
 									
 									<p style="text-align: left;">
-										<img src="images/alibaba.png"><br>Alipay supports cross-border online payments. Alipay users to make purchases on international merchants’ websites and in merchants’ apps with Alipay. During the purchases, we are able to deduct the amount of payment from the users’ Alipay account in Chinese yuan and send the payment to the merchants in different foreign currencies.</p>
+										<img src="images/alibaba.png"><br>Alipay supports cross-border online payments. Alipay users to make purchases on international merchants' websites and in merchants' apps with Alipay. During the purchases, we are able to deduct the amount of payment from the users' Alipay account in Chinese yuan and send the payment to the merchants in different foreign currencies.</p>
 								</div>
 
 							</div>
@@ -357,7 +344,7 @@
 						<div class="col-md-10">
 							<div class="col-sm-6 mb-3">
 								<p style="text-align: left;"><img src="images/bestpay.jpg">
-									<br>Orange Finance (namely China Telecom BestPay Co., Ltd), is a wholly owned subsidiary of China Telecom.It operates the payment and finance businesses.The headquarter in Beijing is established in March 2011. In 2011, Orange Finance received “The payment business license”issued by the People’s Bank of China.</p>
+									<br>Orange Finance (namely China Telecom BestPay Co., Ltd), is a wholly owned subsidiary of China Telecom.It operates the payment and finance businesses.The headquarter in Beijing is established in March 2011. In 2011, Orange Finance received "The payment business license" issued by the People’s Bank of China.</p>
 
 							</div>
 							<div class="col-sm-6 mb-3">
@@ -374,7 +361,7 @@
 						<div class="col-md-10">
 							<div class="col-sm-6 mb-3">
 								<p style="text-align: left;"><img src="images/jd.PNG">
-									<br>JD.com, Inc. (Chinese: 京东; pinyin: Jīngdōng), also known as Jingdong and formerly called 360buy, is a Chinese e-commerce company headquartered in Beijing. It is one of the two largest B2C online retailers in China by transaction volume and revenue,</p>
+									<br>JD.com, Inc., also known as Jingdong and formerly called 360buy, is a Chinese e-commerce company headquartered in Beijing. It is one of the two largest B2C online retailers in China by transaction volume and revenue,</p>
 
 							</div>
 							<div class="col-sm-6 mb-3">
@@ -459,7 +446,7 @@
 								<img class="pictophone" src="images/help.PNG">
 							</div>
 							<div class="col-md-6">
-								Using WeChat Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
+								Using WeChat Pay and Ali Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
 							</div>
 						</div>
 					</div>
@@ -494,32 +481,32 @@
 			<div class="row animate-box" data-animate-effect="fadeIn" style="text-align: center;">
 				
 					<div class="row">
-						<div class="col-md-2  partners">
-							<p><a href="https://pay.weixin.qq.com/index.php/public/wechatpay"><img src="images/p-wechat.png" ></a></p>
+						<div class="col-md-2 col-xs-2 partners">
+							<p><a href="https://pay.weixin.qq.com/index.php/public/wechatpay"><img class="showicon" src="images/p-wechat.png" ></a></p>
 						</div>
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="https://intl.alipay.com/">
-							<img src="images/p-ali.png"></a></p>
+							<img class="showicon" src="images/p-ali.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="https://www.bestpay.com.cn/">
-							<img src="images/p-best.png"></a></p>
+							<img class="showicon" src="images/p-best.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<P><a href="https://www.jdpay.com/home/page">
-							<img src="images/jd.PNG"></a></P>
+							<img class="showicon" src="images/jd.PNG"></a></P>
 						</div>
 
-						<div class="col-md-2 partners" style="vertical-align: middle;">
+						<div class="col-md-2 col-xs-2 partners" style="vertical-align: middle;">
 							<p><a href="http://edmontonexplorer.com/">
-							<img src="images/p-eatfun.png"></a></p>
+							<img class="showicon" src="images/p-eatfun.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://www.signaturemazda.com/">
-							<img src="images/p-mazda.png"></a></p>
+							<img class="showicon" src="images/p-mazda.png"></a></p>
 						</div>
 					</div>
 
@@ -527,33 +514,33 @@
 					
 
 					<div class="row">
-							<div class="col-md-2 partners">
+							<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://tomleemusic.ca/">
-							<img src="images/p-tomlee.png"></a></p>
+							<img class="showicon" src="images/p-tomlee.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://www.ohmore.com/">
-							<img src="images/p-more.png"></a></p>
+							<img class="showicon" src="images/p-more.png"></a></p>
 
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://www.evilnut.ca">
-							<img src="images/p-evilnut.png"></a></p>
+							<img class="showicon" src="images/p-evilnut.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://canadanews.today/">
-							<img src="images/p-jinri.png"></a></p>
+							<img class="showicon" src="images/p-jinri.png"></a></p>
 						</div>
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://www.cytscanada.com/">
-							<img src="images/p-zhongqin.png"></a></p>
+							<img class="showicon" src="images/p-zhongqin.png"></a></p>
 						</div>
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="https://www.mercedes-benz.ca/en/home">
-							<img src="images/p-benz.png"></a></p>
+							<img class="showicon" src="images/p-benz.png"></a></p>
 						</div>
 
 					</div>
@@ -563,70 +550,70 @@
 
 						
 						
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="https://qqfarm.ca/">
-							<img src="images/p-qqfarm.png"></a></p>
+							<img class="showicon" src="images/p-qqfarm.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p>
-								<img src="images/lecan.PNG"></p>
+								<img class="showicon" src="images/lecan.PNG"></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							
-							<img src="images/p-villa.png">
+							<img class="showicon" src="images/p-villa.png">
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="https://www.lexus.ca/lexus/en">
-							<img src="images/p-lex.png"></a></p>
+							<img class="showicon" src="images/p-lex.png"></a></p>
 						</div>
-						<div class="col-md-2 partners">
-							<br>
+						<div class="col-md-2 col-xs-2 partners">
+							
 							<p><a href="http://www.feidaexpress.com/">
-							<img src="images/p-feida.png"></a></p>
+							<img class="showicon" src="images/p-feida.png"></a></p>
 						</div>
-						<div class="col-md-2 partners">
-							<br>
+						<div class="col-md-2 col-xs-2 partners">
+							
 							<p><a href="http://www.perfectlens.ca/">
-							<img src="images/p-gla.png"></a></p>
+							<img class="showicon" src="images/p-gla.png"></a></p>
 						</div>
 					</div>
 
 					<br>
 
 					<div class="row">
-						<div class="col-md-2 partners">
-							<br>
+						<div class="col-md-2 col-xs-2 partners">
+							
 							<p><a href="http://www.cytscanada.com/">
-							<img src="images/pandora.png"></a></p>
+							<img class="showicon" src="images/pandora.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://ihmc.ca/">
-							<img src="images/ihmc.png"></a></p>
+							<img class="showicon" src="images/ihmc.png"></a></p>
 						</div>
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							 
 							<p><a href="https://wichdoc.com/">
-							<img src="images/wichdoc.png"></a></p>
+							<img class="showicon" src="images/wichdoc.png"></a></p>
 						</div>
 
 
 
-						<div class="col-md-2 partners">
+						<div class="col-md-2 col-xs-2 partners">
 							<p><a href="http://www.royalbridgecollege.ca/">
-							<img src="images/p-rb.png"></a></p>
+							<img class="showicon" src="images/p-rb.png"></a></p>
 						</div>
-							<div class="col-md-2 partners">
-							<img src="images/p-xiao.png">
+							<div class="col-md-2 col-xs-2 partners">
+							<img class="showicon" src="images/p-xiao.png">
 						</div>
 
-						<div class="col-md-2 partners">
-							<br>
-							<img src="images/more.png">
+						<div class="col-md-2 col-xs-2 partners">
+							
+							<img class="showicon" src="images/more.png">
 						</div>
 						
 					</div>
