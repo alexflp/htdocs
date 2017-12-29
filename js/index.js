@@ -47,7 +47,60 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $("#phoneicon1").click(function(){
+        $("#phonecontent1").show();
+        $("#phonecontent2").hide();
+        $("#phonecontent3").hide();
+        $("#phonecontent4").hide();
+        $("#phonecontent5").hide();
 
+    })
+})
+
+$(document).ready(function(){
+    $("#phoneicon2").click(function(){
+        $("#phonecontent1").hide();
+        $("#phonecontent2").show();
+        $("#phonecontent3").hide();
+        $("#phonecontent4").hide();
+        $("#phonecontent5").hide();
+
+    })
+})
+
+$(document).ready(function(){
+    $("#phoneicon3").click(function(){
+        $("#phonecontent1").hide();
+        $("#phonecontent2").hide();
+        $("#phonecontent3").show();
+        $("#phonecontent4").hide();
+        $("#phonecontent5").hide();
+
+    })
+})
+
+$(document).ready(function(){
+    $("#phoneicon4").click(function(){
+        $("#phonecontent1").hide();
+        $("#phonecontent2").hide();
+        $("#phonecontent3").hide();
+        $("#phonecontent4").show();
+        $("#phonecontent5").hide();
+
+    })
+})
+
+$(document).ready(function(){
+    $("#phoneicon5").click(function(){
+        $("#phonecontent1").hide();
+        $("#phonecontent2").hide();
+        $("#phonecontent3").hide();
+        $("#phonecontent4").hide();
+        $("#phonecontent5").show();
+
+    })
+})
 
 
 // $("#A1, #A2").click(function() {

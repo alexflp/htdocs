@@ -1431,6 +1431,10 @@ body {
 .jumbotron{
   display: none;
 }
+
+.solutionphone{
+  display: none;
+}
 @media screen and (max-width: 768px) {
 
 
@@ -1546,6 +1550,31 @@ body {
 
   h4{
     font-size: 20px;
+  }
+
+  .solutionpc{
+    display: none;
+  }
+
+  .solutionphone{
+    display: block;
+    text-align: center;
+  }
+  .phonesolutionicon{
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    
+  }
+
+  #phonecontent2,#phonecontent3,#phonecontent4,#phonecontent5{
+    display: none;
+  }
+
+  .phonesolutionxs p{
+    font-size: 10px;
+    text-align: center;
+    
   }
 }
 

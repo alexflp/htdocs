@@ -375,7 +375,7 @@
 			</div>
 	</div>	
 	<div id="fh5co-features" data-section="features">
-		<div class="container">
+		<div class="container solutionpc">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="animate-box" data-animate-effect="fadeIn">Industry Solutions</h2>
@@ -426,6 +426,67 @@
 				</div>
 				
 				<div class="clearfix visible-sm-block visible-xs-block"></div>
+			</div>
+		</div>
+
+		<div class="container solutionphone">
+			<div class="row">
+				<h2 class="animate-box" data-animate-effect="fadeIn">Industry Solutions</h2>
+				
+			</div>
+			<br>
+			<div class="row animate-box" data-animate-effect="fadeIn">
+				<div class="col-xs-4 phonesolutionxs">
+					<img id="phoneicon1" class="phonesolutionicon" src="images/hotel.png">
+					<p>Hotel</p>
+				</div>
+				<div class="col-xs-4 phonesolutionxs">
+					<img id="phoneicon2" class="phonesolutionicon" src="images/edu.png">
+					<p>Study abroad</p>
+				</div>
+				<div class="col-xs-4 phonesolutionxs">
+					<img id="phoneicon3" class="phonesolutionicon" src="images/food.png">	
+					<p>Food Industry</p>
+				</div>
+				<div class="col-xs-4 col-xs-offset-2 phonesolutionxs">
+					<img id="phoneicon4" class="phonesolutionicon" src="images/tic.png">
+					<p>Travel service</p>
+				</div>
+				<div class="col-xs-4 phonesolutionxs">
+					<img id="phoneicon5" class="phonesolutionicon" src="images/onshop.png">
+					<p>E-commerce</p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="phonecontent1" class="col-xs-12 animate-box" data-animate-effect="fadeIn">
+				<h3>Hotel</h3>
+				<p>For the food industry, AlphaPay not only helping businesses to access wechat and ali payment, but also provides marketing ordering, take-away and other one-stop service. Through wechat public account and ali discovery to increase restaurant sales opportunities, improved consumer experience, reduced restaurant operating cost. </p>
+
+				</div>
+				<div id="phonecontent2" class="col-xs-12">
+				<h3>Study abroad</h3>
+				<p>With the increasing number of students studying abroad, the market zize of the service industry is growing. For the education sector, AlphaPay provide a set of educational information, consulting services, experience lectures and a series of marketing services. AlphaPay will make cross-border payments become simple and efficient. </p>
+
+				</div>
+				<div id="phonecontent3" class="col-xs-12">
+				<h3>Food Industry</h3>
+				<p>For the food industry, AlphaPay not only helping businesses to access wechat and ali payment, but also provides marketing ordering, take-away and other one-stop service. Through wechat public account and ali discovery to increase restaurant sales opportunities, improved consumer experience, reduced restaurant operating cost. </p>
+
+				</div>
+				<div id="phonecontent4" class="col-xs-12">
+					<h3>Travel service</h3>
+				<p>Scan QR code to pay ticket is simple and quick to reduce waiting line especially when weekend and holiday, our QR code can be put at either self-service ticket machine or ticket windows. </p>
+
+				</div>
+				<div id="phonecontent5" class="col-xs-12">
+
+				<h3>E-commerce</h3>
+				<p>AlphaPay will provide full technical solutions to Canadian companies who sell products to Chinese consumers via website or any type of e-business. Chinese consumers can pay in CNY by Wechat and Ali pay, merchants get real-time exchange rate of local currency settlement services.</p>
+
+
+				</div>
+
+
 			</div>
 		</div>
 	</div>
