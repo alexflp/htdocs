@@ -280,19 +280,18 @@
 						<h3>Chinese Preferred Payment Modes</h3>
 						<div class="col-md-10">
 							<div class="row">
-								<div class="col-sm-4 col-xs-6">
+								<div class="col-sm-3 col-xs-7 list" style="text-align:center;">
 									<h4 class="pinsolution" id="inone"><a href="#Solutions">WECHAT PAY</a></h4>
-
 								</div>
-								<div class="col-sm-3 col-xs-6 list">
+								<div class="col-sm-3 col-xs-5 list" style="text-align:center;">
 								
 									<h4 class="pinsolution" id="intwo"><a href="#Solutions">ALIPAY</a></h4>
 								</div>
-								<div class="col-sm-3 col-xs-6 list">
+								<div class="col-sm-3 col-xs-6 list" style="text-align:center;">
 								
 									<h4 class="pinsolution" id="inthree"><a href="#Solutions">BESTPAY</a></h4>
 								</div>
-								<div class="col-sm-2 col-xs-6 list">
+								<div class="col-sm-3 col-xs-6 list" style="text-align:center;">
 									<h4 class="pinsolution" id="infour"><a href="#Solutions">JDPAY</a></h4>
 								</div>
 						
@@ -437,24 +436,24 @@
 			<br>
 			<div class="row animate-box" data-animate-effect="fadeIn">
 				<div class="col-xs-4 phonesolutionxs">
-					<img id="phoneicon1" class="phonesolutionicon" src="images/hotel.png">
-					<p>Hotel</p>
+					<p id="phoneicon1" class="phoneiconclass"><img class="phonesolutionicon" src="images/hotel.png">
+					Hotel</p>
 				</div>
 				<div class="col-xs-4 phonesolutionxs">
-					<img id="phoneicon2" class="phonesolutionicon" src="images/edu.png">
-					<p>Study abroad</p>
+					<p id="phoneicon2" class="phoneiconclass"><img class="phonesolutionicon" src="images/edu.png">
+					Study abroad</p>
 				</div>
 				<div class="col-xs-4 phonesolutionxs">
-					<img id="phoneicon3" class="phonesolutionicon" src="images/food.png">	
-					<p>Food Industry</p>
+					<p id="phoneicon3" class="phoneiconclass"><img  class="phonesolutionicon" src="images/food.png">	
+					Food Industry</p>
 				</div>
 				<div class="col-xs-4 col-xs-offset-2 phonesolutionxs">
-					<img id="phoneicon4" class="phonesolutionicon" src="images/tic.png">
-					<p>Travel service</p>
+					<p id="phoneicon4" class="phoneiconclass"><img  class="phonesolutionicon" src="images/tic.png">
+					Travel service</p>
 				</div>
 				<div class="col-xs-4 phonesolutionxs">
-					<img id="phoneicon5" class="phonesolutionicon" src="images/onshop.png">
-					<p>E-commerce</p>
+					<p id="phoneicon5" class="phoneiconclass"><img class="phonesolutionicon" src="images/onshop.png">
+					E-commerce</p>
 				</div>
 			</div>
 			<div class="row">

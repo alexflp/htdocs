@@ -1578,7 +1578,9 @@ body {
   }
 }
 
-
+#inone{
+  border-bottom: 2px solid #d51212;
+}
 
 .choosen{
   border: 1px solid;
@@ -1591,8 +1593,15 @@ body {
   font-size: 16px;
 }
 
+.pinsolution a{
+  text-decoration: none;
+}
+
 .upline{
   margin-top: 15px;
   border-top: 3px solid #d51212;
 }
 
+#phoneicon1{
+  color:#d51212;
+}
