@@ -59,6 +59,7 @@
 		            <li><a href="/channel/qrcode.html"><span>Solution</span></a></li>
 		            <li><a href="/api/en.html"><span>API</a></li>
 					<li><a href="#contact"><span>Contact</a></li>
+					<li><a href="https://pay.alphapay.ca/login.html"><span>Login</a></li>
 					<li><a href="cn.html"><span>中文</a><li>
 		            
 		          </ul>
