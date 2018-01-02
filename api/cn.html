@@ -1,0 +1,5422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <title>AlphaPay</title>
+      <meta charset="utf-8"> 
+      <link rel="shortcut icon" href="/images/icon.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+      
+        <!-- Simple Line Icons -->
+        <link rel="stylesheet" href="/css/simple-line-icons.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+    
+
+      <link rel="stylesheet" type="text/css" href="/stylesheets/api.css">
+
+
+  </head>
+  <body>
+    <header>
+        <nav id="servicenav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="../images/alpha.png"></a>
+                </div>
+               
+                 
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="/cn.html" data-nav-section="home"><span style="color: white;">主页</span></a></li>
+                          <li><a href="/cnchannel/h5.html"><span style="color: white;">解决方案</span></a></li>
+                    <li><a href="/api/cn.html"><span style="color: white;">API</span></a></li>
+                    <li><a href="/cn.html#contact"><span style="color: white;">联系我们</span></a></li>
+                    <li><a href="https://pay.alphapay.ca/login.html"><span style="color: white;">登陆</span></a></li>
+                    <li><a href="/"><span style="color: white;">English</span></a></li>
+                        
+                      </ul>
+               
+            </div>
+        </nav>
+    </header>
+      <div class="container-fluid">
+
+    <div id="sidenav" class="span2">
+<nav id="scrollingNav">
+
+  <ul class="sidenav nav nav-list list">
+        <li class="nav-fixed nav-header navbar-btn nav-list-item active" data-group="_">
+          <a href="#api-_">Overview</a>
+        </li>
+        <li class="nav-header nav-list-item" data-group="QRCode"><a href="#api-QRCode">QRCode</a></li><li class="" data-group="QRCode" data-name="NewQRCode" data-version="1.0.0">
+          <a href="#api-QRCode-NewQRCode" class="nav-list-item">创建QRCode支付单</a>
+        </li>
+
+        <li class="" data-group="QRCode" data-name="QRCodePay" data-version="1.0.0">
+          <a href="#api-QRCode-QRCodePay" class="nav-list-item">QRCode支付跳转页</a>
+        </li>
+
+        <li class="nav-header nav-list-item" data-group="JSApi"><a href="#api-JSApi">JSApi</a></li><li class="" data-group="JSApi" data-name="NewJSAPI" data-version="1.0.0">
+          <a href="#api-JSApi-NewJSAPI" class="nav-list-item">创建JSAPI订单</a>
+        </li>
+
+        <li class="" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.1">
+          <a href="#api-JSApi-JSAPIPay" class="nav-list-item">JSAPI支付跳转页</a>
+        </li>
+        
+
+        <li class="nav-header nav-list-item" data-group="MobileH5"><a href="#api-MobileH5">MobileH5</a></li><li class="" data-group="MobileH5" data-name="NewMobileH5Pay" data-version="1.0.0">
+          <a href="#api-MobileH5-NewMobileH5Pay" class="nav-list-item">创建H5支付单</a>
+        </li>
+
+        <li class="" data-group="MobileH5" data-name="MobileH5Pay" data-version="1.0.0">
+          <a href="#api-MobileH5-MobileH5Pay" class="nav-list-item">H5支付跳转页</a>
+        </li>
+
+        <li class="nav-header nav-list-item" data-group="RetailPay"><a href="#api-RetailPay">RetailPay</a></li><li class="" data-group="RetailPay" data-name="RetailMicroPay" data-version="1.0.2">
+          <a href="#api-RetailPay-RetailMicroPay" class="nav-list-item">创建线下支付订单</a>
+        </li>
+
+
+        <li class="" data-group="RetailPay" data-name="RetailQRCode" data-version="1.0.2">
+          <a href="#api-RetailPay-RetailQRCode" class="nav-list-item">创建线下QRCode支付单</a>
+        </li>
+
+        <li class="nav-header nav-list-item" data-group="CommonApi"><a href="#api-CommonApi">CommonApi</a></li><li class="" data-group="CommonApi" data-name="GetExchange" data-version="1.0.0">
+          <a href="#api-CommonApi-GetExchange" class="nav-list-item">获取当前汇率</a>
+        </li>
+
+        <li class="" data-group="CommonApi" data-name="OrderStatus" data-version="1.0.3">
+          <a href="#api-CommonApi-OrderStatus" class="nav-list-item">查询订单状态</a>
+        </li>
+
+        <li class="" data-group="CommonApi" data-name="RefundOrder" data-version="1.0.2">
+          <a href="#api-CommonApi-RefundOrder" class="nav-list-item">申请退款</a>
+        </li>
+
+        <li class="" data-group="CommonApi" data-name="RefundQuery" data-version="1.0.0">
+          <a href="#api-CommonApi-RefundQuery" class="nav-list-item">查询退款状态</a>
+        </li>
+
+        <li class="" data-group="CommonApi" data-name="ListOrder" data-version="1.0.0">
+          <a href="#api-CommonApi-ListOrder" class="nav-list-item">查看账单</a>
+        </li>
+
+        <li class="" data-group="CommonApi" data-name="PayNotice" data-version="1.0.0">
+          <a href="#api-CommonApi-PayNotice" class="nav-list-item">付款通知</a>
+        </li></ul>
+</nav>
+</div>
+    <div id="content">
+      <div id="project">
+  <div class="pull-left">
+    <h1>AlphaPay网关支付接口</h1>
+    <h2>AlphaPay网关支付第三方开发者对接文档</h2>
+  </div>
+
+  <div class="clearfix"></div>
+</div>
+      <div id="header">
+    <div id="api-_"><h1>Overview</h1>
+<h2>域名</h2>
+<h4>生产环境</h4>
+<p><a href="https://www.flashpayment.com/">https://www.flashpayment.com/</a></p>
+<p>沙箱测试参数和生产环境不同，请联系AlphaPay客服帮助配置沙箱环境参数。</p>
+<h2>请求方式和参数格式</h2>
+<p>支付单和退款单提交均为PUT方式，订单查询均为GET方式；包含Request Entity的请求参数格式为json</p>
+<p>除跳转页面外，所有的Accept均为application/json；所有的PUT/POST请求Content-Type为application/json</p>
+<p>系统使用UTF-8字符集</p>
+<p>参数分为三种：Path Variable/Query Param/JSON entity</p>
+<ul>
+<li>PathVariable:包含在URI内的参数</li>
+<li>Query Param:在URI末尾?后的key=value形式的参数</li>
+<li>JSON entity:只在PUT/POST请求中使用</li>
+</ul>
+<p>所有返回JSON的API，成功访问返回状态值均为200（不论执行结果）。JSON固定包含字段return_code，若值为SUCCESS则表示执行成功；
+其他值表示执行失败，此时可查询错误码了解对应的错误类型，此时还会携带return_msg字段作为错误描述信息</p>
+<h2>多语言支持</h2>
+<p>系统错误提示支持中文、英文两种语言，默认根据Request Header中的Accept-Language值自动选择，如需调整亦可以添加locale cookie进行指定。</p>
+<h2>签名算法</h2>
+<p>每次请求都必须加入签名信息作为请求校验。校验参数全部以Query Param参数的方式附加在URL后面，顺序不分先后。</p>
+<p>签名过程：</p>
+<ol>
+<li>连接生成签名的原始字符串，需要4个参数，使用&amp;连接，无需转码</li>
+</ol>
+<blockquote>
+<p>valid_string=partner_code&amp;time&amp;nonce_str&amp;credential_code</p>
+</blockquote>
+<p>参数说明：</p>
+<ul>
+<li>partner_code:商户编码，由4位大写字母或数字构成</li>
+<li>time:PDT毫秒时间戳，取当前PDT时间的毫秒数时间戳，Long类型，5分钟内有效</li>
+<li>nonce_str:随机字符串，无长度限制，请使用URL安全字符（避开&amp;,=等符号），请注意HTTP URL的最大长度限制，建议长度在10到30位</li>
+<li>credential_code:系统为商户分配的开发校验码，请妥善保管，不要在公开场合泄露</li>
+</ul>
+<ol start="2">
+<li>使用SHA256进行签名，并转为Hex小写字符串</li>
+</ol>
+<blockquote>
+<p>sign=hex(sha256(valid_string)).toLowerCase()</p>
+</blockquote>
+<ol start="3">
+<li>在请求中把签名使用的time,nonce_str和生成的sign一同作为Query Param参数发送</li>
+</ol>
+<blockquote>
+<p>案例</p>
+<p>valid_string=RPAY&amp;1468691301081&amp;aaf2a94c8c2d56d5b43a1a3d9d811102&amp;pQ5Jc9eoTcsxqPY5uQ3p2WmvSy0zEYeP
+sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
+</blockquote>
+<blockquote>
+<p>测试地址：<a href="https://www.flashpayment.com/sign_test.html" target="_blank">https://www.flashpayment.com/sign_test.html</a></p>
+</blockquote>
+<h2>币种代码</h2>
+<p>由于微信端限制原因，AlphaPay只接受人民币和加元两个币种的支付订单</p>
+<ul>
+<li>CAD:加元</li>
+<li>CNY:人民币</li>
+</ul>
+<h2>业务规则</h2>
+<ul>
+<li>QRCode支付是在网页上展示二维码，用户使用微信扫一扫扫码后直接进入微信支付页面，适用于商城类web网站；</li>
+<li>JSAPI支付是在微信浏览器内直接跳转到AlphaPay让用户选择支付订单，页面只能在微信客户端打开，适用于微店；</li>
+<li>创建订单时需要提供订单号，同一个订单允许重复提交，系统会自动根据订单状态判断是否创建新订单并关闭旧订单。因此商户端应该同一个订单只用一个单号，避免重复付款；</li>
+<li>由于存在自动创建新订单机制，创建订单后返回的AlphaPay单号不代表最终支付的单号；</li>
+<li>QRCode支付订单创建后会直接返回QRCode和pay_url，商户可以自行选择展示支付二维码或跳转至AlphaPay支付页；</li>
+<li>JSAPI支付订单创建后会返回pay_url，商户应该跳转到这个地址让用户完成支付；</li>
+<li>跳转pay_url时必须加上签名信息；</li>
+<li>每次请求都应该生成新的签名；</li>
+<li>订单成功支付后会调用订单中提供的notify_url，详情可以查看API定义；若创建订单时未提供，商户需要在创建订单后轮询订单状态接口，直到订单被支付或过期；</li>
+<li>订单支付有效期为5分钟，超时可以用相同的订单号重新发起请求，建议重新发起请求的时机为用户再次打开支付页的时候；</li>
+<li>使用跳转支付页前应该先调用后台服务输入金额等参数创建订单后再跳转；</li>
+<li>创建订单、创建退款接口都允许同订单号重复调用，但是具体参数以初次请求的参数为准；</li>
+<li>所有和金额相关的数字均以货币最小面值为单位，以CAD为例，100表示CAD 1.00。</li>
+</ul>
+
+</ul>
+</div>
+</div>
+      <div id="sections">
+  <section id="api-QRCode">
+    <h1>QRCode</h1>
+      <div id="api-QRCode-NewQRCode">
+        
+  <article id="api-QRCode-NewQRCode-1.0.0" data-group="QRCode" data-name="NewQRCode" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>QRCode - 创建QRCode支付单</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>QRCode支付单适用于PC端网页/应用进行支付，用户使用微信客户端扫描下单后生成的二维码完成支付。<br> <img class="showp" src="/images/qrcode.png"><br> 返回值包括二维码字符串，二维码图片，支付地址，商户可以自行决定直接展示二维码或跳转支付页，跳转支付页需要带上签名信息。 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求同一商户唯一</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，金额，单位为货币最小单位，例如使用100表示CAD1.00</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种代码</p>
+            <p class="default-value">默认值: <code>CAD</code></p>
+            
+            <p class="type-size">允许值:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付通知url，详见支付通知api，不填则不会推送支付通知</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>操作人员标识</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS表示创建订单成功，EXISTS表示订单已存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户编码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户注册全名</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户名称</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID，最终支付成功的订单ID可能不同</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">code_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付码字符串，商户可以据此自行生产二维码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">qrcode_img</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>Base64封装的二维码图片，可直接作为img的src属性</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>跳转URL</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>订单已支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-QRCode-QRCodePay">
+        
+  <article id="api-QRCode-QRCodePay-1.0.0" data-group="QRCode" data-name="QRCodePay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>QRCode - QRCode支付跳转页</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>必须先调用创建QRCode订单接口再进行跳转。 建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求已预先创建</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，支付成功后跳转页面，回调时会带上签名参数用于校验</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-JSApi">
+    <h1>JSApi</h1>
+      <div id="api-JSApi-NewJSAPI">
+        
+  <article id="api-JSApi-NewJSAPI-1.0.0" data-group="JSApi" data-name="NewJSAPI" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>JSApi - 创建JSAPI订单</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>JSAPI适用于在微信内打开的网页进行支付，如果用户从公众号进入支付页要求公众号已完成认证。用户下单后跳转至AlphaPay订单页，并拉起微信内置收银台完成支付<br> <img class="showp" src="/images/jsapi.png"><br> 返回值包括支付地址，商户应该引导用户跳转支付页，跳转支付页需要带上签名信息； 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求同一商户唯一</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，金额，单位为货币最小单位，例如使用100表示CAD1.00</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种代码</p>
+            <p class="default-value">默认值: <code>CAD</code></p>
+            
+            <p class="type-size">允许值:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付通知url，详见支付通知api，不填则不会推送支付通知</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>操作人员标识</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS表示创建订单成功，EXISTS表示订单已存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户编码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户注册全名</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户名称</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID，最终支付成功的订单ID可能不同</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>跳转URL</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>订单已支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-JSApi-JSAPIPay">
+        
+  <article id="api-JSApi-JSAPIPay-1.0.1" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.1">
+    <div class="pull-left">
+      <h1>JSApi - JSAPI支付跳转页</h1>
+    </div>
+ 
+    <div class="clearfix"></div>
+
+
+      <p></p><p>JSAPI适用于在微信内打开的网页进行支付，如果用户从公众号进入支付页要求公众号已完成认证。用户下单后跳转至AlphaPay订单页，并拉起微信内置收银台完成支付<br> <img class="showp" src="/images/jsapi.png"><br> 必须先调用创建JSAPI订单接口再进行跳转。若开启直接支付，将不显示订单详情直接弹出支付界面。并且无论结果都会跳到回调页面。 跳回回调页面时不会带上签名参数。建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求已预先创建</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，支付成功后跳转页面</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">directpay</td>
+              <td>
+                Boolean
+              </td>
+            <td>
+            <p>是否直接支付</p>
+            <p class="default-value">默认值: <code>false</code></p>
+            
+            <p class="type-size">允许值:
+                <code>true</code>, 
+                <code>false</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-JSApi-JSAPIPay">
+        
+  <article id="api-JSApi-JSAPIPay-1.0.0" class="hide" data-group="JSApi" data-name="JSAPIPay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>JSApi - JSAPI支付跳转页</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>必须先调用创建JSAPI订单接口再进行跳转</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求已预先创建</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，支付成功后跳转页面</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-MobileH5">
+    <h1>MobileH5</h1>
+      <div id="api-MobileH5-NewMobileH5Pay">
+        
+  <article id="api-MobileH5-NewMobileH5Pay-1.0.0" data-group="MobileH5" data-name="NewMobileH5Pay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>MobileH5 - 创建H5支付单</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p><b>注意：H5支付接口必须单独申请，腾讯批复后方可使用，有需要的商户请联系AlphaPay客服</b><br> H5支付适用场景为移动端App或者手机自带浏览器进行支付，用户下单后浏览器跳转至微信支付页面并自动拉起微信客户端完成支付。<br> 返回值包括跳转支付地址，跳转支付页需要带上签名信息。 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求同一商户唯一</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，金额，单位为货币最小单位，例如使用100表示CAD1.00</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种代码</p>
+            <p class="default-value">默认值: <code>CAD</code></p>
+            
+            <p class="type-size">允许值:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付通知url，详见支付通知api，不填则不会推送支付通知</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>操作人员标识</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS表示创建订单成功，EXISTS表示订单已存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户编码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户注册全名</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户名称</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID，最终支付成功的订单ID可能不同</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>跳转URL</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>订单已支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-MobileH5-MobileH5Pay">
+        
+  <article id="api-MobileH5-MobileH5Pay-1.0.0" data-group="MobileH5" data-name="MobileH5Pay" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>MobileH5 - H5支付跳转页</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>必须先调用创建H5支付订单接口再进行跳转。 建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求已预先创建</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">redirect</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，支付成功后跳转页面，回调时会带上签名参数用于校验</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-RetailPay">
+    <h1>RetailPay</h1>
+      <div id="api-RetailPay-RetailMicroPay">
+        
+  <article id="api-RetailPay-RetailMicroPay-1.0.2" data-group="RetailPay" data-name="RetailMicroPay" data-version="1.0.2">
+    <div class="pull-left">
+      <h1>RetailPay - 创建线下支付订单</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>线下支付订单接口用于带有扫码设备的收银终端进行对接，商户输入金额后要求客户出示支付码，用扫码枪扫码后将扫码内容和金额一并提交并完成支付操作。 线下支付订单接口现已兼容微信、支付宝通道<br> <img src="/images/retail.png"></p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，金额，单位为货币最小单位，例如使用100表示CAD1.00</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种代码</p>
+            <p class="default-value">默认值: <code>CAD</code></p>
+            
+            <p class="type-size">允许值:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">device_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，设备ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">auth_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，扫描用户微信客户端得到的支付码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付通知url，详见支付通知api，不填则不会推送支付通知</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>PAYING:等待支付</li>     <li>CREATE_FAIL:订单创建失败</li>     <li>CLOSED:已关闭</li>     <li>PAY_FAIL:支付失败</li>     <li>PAY_SUCCESS:支付成功</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>订单金额，单位是货币最小面值单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>实际支付金额，单位是货币最小面值单位(目前等于订单金额，为卡券预留)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付时间（yyyy-MM-dd HH:mm:ss，加拿大西部时间）</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单创建时间（最新订单为准）（yyyy-MM-dd HH:mm:ss，加拿大西部时间）</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种，通常为CAD</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>订单已支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTHCODEEXPIRE</td>
+            <td>
+            <p>二维码已过期</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOTENOUGH</td>
+            <td>
+            <p>余额不足</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOTSUPORTCARD</td>
+            <td>
+            <p>不支持卡类型</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTH_CODE_ERROR</td>
+            <td>
+            <p>二维码被重复提交</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">AUTH_CODE_INVALID</td>
+            <td>
+            <p>不是微信支付二维码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-RetailPay-RetailQRCode">
+        
+  <article id="api-RetailPay-RetailQRCode-1.0.2" data-group="RetailPay" data-name="RetailQRCode" data-version="1.0.2">
+    <div class="pull-left">
+      <h1>RetailPay - 创建线下QRCode支付单</h1>
+    </div>
+    
+    <div class="clearfix"></div>
+
+
+      <p></p><p>线下QRCode支付用于对接无扫码设备的收银终端，下单后得到二维码地址，自行生成二维码图片后展示在收银终端屏幕上，并由用户使用对应支付客户端进行扫码支付。 线下QRCode现已同时兼容支付宝、微信和翼支付客户端进行支付<br> <img src="/images/retail_api.png"><br> 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号，要求同一商户唯一</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">description</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">price</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，金额，单位为货币最小单位，例如使用100表示CAD1.00</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种代码</p>
+            <p class="default-value">默认值: <code>CAD</code></p>
+            
+            <p class="type-size">允许值:
+                <code>CAD</code>, 
+                <code>CNY</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">device_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，设备ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">notify_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付通知url，详见支付通知api，不填则不会推送支付通知</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">operator</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>操作人员标识</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS表示创建订单成功，EXISTS表示订单已存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户编码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">full_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户注册全名</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户名称</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID，最终支付成功的订单ID可能不同</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">code_url</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付码字符串，商户可以据此自行生产二维码</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_PAID</td>
+            <td>
+            <p>订单已支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+
+  <section id="api-CommonApi">
+    <h1>CommonApi</h1>
+      <div id="api-CommonApi-GetExchange">
+        
+  <article id="api-CommonApi-GetExchange-1.0.0" data-group="CommonApi" data-name="GetExchange" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - 获取当前汇率</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>获取当前微信CAD兑CNY汇率值(1CAD=?CNY)，该汇率仅做参考，以实际成交汇率为准</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>汇率值</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-OrderStatus">
+        
+  <article id="api-CommonApi-OrderStatus-1.0.3" data-group="CommonApi" data-name="OrderStatus" data-version="1.0.3">
+    <div class="pull-left">
+      <h1>CommonApi - 查询订单状态</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>查询范围包括QRCode订单、JSAPI订单和线下支付订单</p><p></p>
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>PAYING:等待支付</li>     <li>CREATE_FAIL:订单创建失败</li>     <li>CLOSED:已关闭</li>     <li>PAY_FAIL:支付失败</li>     <li>PAY_SUCCESS:支付成功</li> </ul> 如果需要可以用相同订单号再次发起支付单，支付成功或支付中的无法重复发起订单
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID，同时也是微信订单ID，最终支付成功的订单ID可能不同</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>订单金额，单位是货币最小面值单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>实际支付金额，单位是货币最小面值单位(目前等于订单金额，为卡券预留)</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>交易时使用的汇率，1CAD=?CNY</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付时间（yyyy-MM-dd HH:mm:ss，加拿大西部时间）</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单创建时间（最新订单为准）（yyyy-MM-dd HH:mm:ss，加拿大西部时间）</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种，通常为CAD</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">channel</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付渠道 Alipay|支付宝、Wechat|微信、Bestpay|翼支付</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-RefundOrder">
+        
+  <article id="api-CommonApi-RefundOrder-1.0.2" data-group="CommonApi" data-name="RefundOrder" data-version="1.0.2">
+    <div class="pull-left">
+      <h1>CommonApi - 申请退款</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>一笔支付订单可以分多次退款，退款总金额不得超过实际支付金额，退款币种与支付订单一致</p><p></p>
+    <span class="type type__put">put</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户退款单号</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>必填，退款金额，单位是货币最小单位，单个订单退款单金额总和不能超过用户支付金额</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>WAITING:正在提交</li>     <li>CREATE_FAILED:提交失败</li>     <li>SUCCESS:提交成功</li>     <li>FAILED:退款失败</li>     <li>FINISHED:退款成功</li>     <li>CHANGE:退款无法到账，需要人工介入</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay退款单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户提交的退款单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">amount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>退款金额，单位是货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种，通常为CAD</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_NOT_PAID</td>
+            <td>
+            <p>订单未支付完成，无法退款</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-RefundQuery">
+        
+  <article id="api-CommonApi-RefundQuery-1.0.0" data-group="CommonApi" data-name="RefundQuery" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - 查询退款状态</h1>
+    </div>
+ 
+    <div class="clearfix"></div>
+
+
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户支付订单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户退款单号</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">result_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <ul>     <li>WAITING:正在提交</li>     <li>CREATE_FAILED:提交失败</li>     <li>SUCCESS:提交成功</li>     <li>FAILED:退款失败</li>     <li>FINISHED:退款成功</li>     <li>CHANGE:退款无法到账，需要人工介入</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay退款单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_refund_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户提交的退款单号</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">amount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>退款金额，单位是货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种，通常为CAD</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">ORDER_NOT_EXIST</td>
+            <td>
+            <p>订单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_MISMATCH</td>
+            <td>
+            <p>订单号与商户不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">ORDER_NOT_PAID</td>
+            <td>
+            <p>订单未支付完成，无法退款</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">REFUND_NOT_EXIST</td>
+            <td>
+            <p>退款单不存在</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">REFUND_MISMATCH</td>
+            <td>
+            <p>退款单号与支付单不匹配</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-ListOrder">
+        
+  <article id="api-CommonApi-ListOrder-1.0.0" data-group="CommonApi" data-name="ListOrder" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - 查看账单</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+    <span class="type type__get">get</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Path Variable</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，商户编码，由4位大写字母或数字构成</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Query Params</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">date</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单创建日期，'yyyyMMdd'格式，加拿大西部时间，不填默认查询所有订单</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">status</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单状态</p> <ul>     <li>ALL:全部订单，包括未完成订单和已关闭订单</li>     <li>PAID:只列出支付过的订单，包括存在退款订单</li>     <li>REFUNDED:只列出存在退款订单</li> </ul>
+            <p class="default-value">默认值: <code>ALL</code></p>
+            
+            <p class="type-size">允许值:
+                <code>'ALL'</code>, 
+                <code>'PAID'</code>, 
+                <code>'REFUNDED'</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="code">page</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>页码，从1开始计算</p>
+            <p class="default-value">默认值: <code>1</code></p>
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">limit</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>每页条数</p>
+            <p class="default-value">默认值: <code>10</code></p>
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                Long
+              </td>
+            <td>
+            <p>必填，PDT毫秒时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>必填，签名</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ROOT</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>执行结果</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">data</td>
+              <td>
+                JSON[]
+              </td>
+            <td>
+            <p>订单列表</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pagination</td>
+              <td>
+                JSON
+              </td>
+            <td>
+            <p>分页信息</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">analysis</td>
+              <td>
+                JSON
+              </td>
+            <td>
+            <p>统计信息</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>data</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>订单金额，单位是货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>订单支付金额，单位是货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">channel</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付渠道 Alipay|支付宝、Wechat|微信、Bestpay|翼支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>格式'yyyy-MM-dd HH:mm:ss'，加拿大西部时间，订单创建时间</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>格式'yyyy-MM-dd HH:mm:ss'，加拿大西部时间，支付时间，未支付订单为空</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">status</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单状态</p> <ul>     <li>SUBMITTING:提交中</li>     <li>SUBMIT_FAIL:提交失败</li>     <li>WAITING_PAYMENT:等待支付</li>     <li>CLOSED:已关闭</li>     <li>PAYMENT_FAIL:支付失败</li>     <li>SUCCESS:支付成功</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_body</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单标题</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">gateway</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单模式</p> <ul>     <li>QRCODE:二维码支付，用户扫码支付</li>     <li>JSAPI:公众号支付</li>     <li>OFFLINE:线下支付，用户被扫</li> </ul>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户编码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_name</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户名称</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">refund_fee</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>当前订单退款金额，货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>pagination</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">page</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>页码</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">limit</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>每页条数</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">totalCount</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>总条数</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">totalPages</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>总页数</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>analysis</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">order_count</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>支付成功订单数（包含有退款订单）</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>成交订单总额，货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>支付总额，货币最小单位</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>ERROR</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+            <td>
+            <p>Error Code</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">return_msg</td>
+            <td>
+            <p>Error Description</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>错误码</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">名称</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">SYSTEMERROR</td>
+            <td>
+            <p>系统内部异常</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SHORT_ID</td>
+            <td>
+            <p>商户编码不合法或没有对应商户</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">SIGN_TIMEOUT</td>
+            <td>
+            <p>签名超时，time字段与服务器时间相差超过5分钟</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">INVALID_SIGN</td>
+            <td>
+            <p>签名错误</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">PARAM_INVALID</td>
+            <td>
+            <p>参数不符合要求，具体细节可参考return_msg字段</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">NOT_PERMITTED</td>
+            <td>
+            <p>未开通网关支付权限</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    
+
+  </article>
+
+      </div>
+      <div id="api-CommonApi-PayNotice">
+        
+  <article id="api-CommonApi-PayNotice-1.0.0" data-group="CommonApi" data-name="PayNotice" data-version="1.0.0">
+    <div class="pull-left">
+      <h1>CommonApi - 付款通知</h1>
+    </div>
+
+    <div class="clearfix"></div>
+
+
+      <p></p><p>若订单创建时提供了notify_url，系统会在用户支付成功后向这个地址主动发送支付成功状态推送，请求方式为POST 与服务器API不同，推送校验参数会包含在json内，商户系统应该验证校验参数，确定来源正确后再进行后续操作。 商户系统收到请求后应按要求返回参数，若AlphaPay未收到合法参数，视为商户未接收成功，推送动作最多会重试3次，商户系统应当能够处理收到的重复请求。</p><p></p>
+    <span class="type type__post">post</span>
+    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://www.flashpayment.com//notify_url</span></code></pre>
+
+
+
+    
+      <h2>Header</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            
+            <th style="width: 70%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">Accept</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">Content-Type</td>
+            <td>
+            <p>application/json</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>JSON字段</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">time</td>
+              <td>
+                long
+              </td>
+            <td>
+            <p>PDT时间戳</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">nonce_str</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>随机字符串</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">sign</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>签名</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">partner_order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>商户订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">order_id</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>AlphaPay订单ID</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">total_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>订单金额，单位是最小货币单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">real_fee</td>
+              <td>
+                int
+              </td>
+            <td>
+            <p>支付金额，单位是最小货币单位</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">rate</td>
+              <td>
+                Double
+              </td>
+            <td>
+            <p>交易时使用的汇率，1CAD=?CNY</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">currency</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>币种，CAD/CNY</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">channel</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>支付渠道 Alipay|支付宝、Wechat|微信、Bestpay|翼支付</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">create_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单创建时间，格式为'yyyy-MM-dd HH:mm:ss'，加拿大西部时间</p>
+            
+            
+                        </td>
+          </tr>
+          <tr>
+            <td class="code">pay_time</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>订单支付时间，格式为'yyyy-MM-dd HH:mm:ss'，加拿大西部时间</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+      <h2>Success 200</h2>
+      <table>
+        <thead>
+          <tr>
+          <th style="width: 30%">字段</th>
+            <th style="width: 10%">类型</th>
+            <th style="width: 60%">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">return_code</td>
+              <td>
+                String
+              </td>
+            <td>
+            <p>SUCCESS</p>
+            
+            
+                        </td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+
+    
+
+  </article>
+
+      </div>
+  </section>
+</div>
+      <div id="footer"></div>
+      <div id="generator">
+      <div class="content">
+        基于 <a href="http://apidocjs.com">apidoc</a> 0.17.6 - 2017-10-01T02:21:51.414Z
+      </div>
+</div>
+    </div>
+  </div>
+
+    </body>
+    <footer >
+    <% include footer %>
+
+    </footer>
+  </body>
+</html>
