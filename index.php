@@ -44,29 +44,31 @@
 
 	</head>
 	<body>
-	<header role="banner" id="fh5co-header">
-			<div class="container">
-				<!-- <div class="row"> -->
-			    <nav class="navbar navbar-default">
-		        <div class="navbar-header">
-		        	<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		          	<a class="navbar-brand" href="/"><img id="lrg-logo" src="/images/alpha.png"></a> 
-		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
+
+	<header id="servicenav" class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+	     
+	        <div class="navbar-header">
+	            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="/index.php" class="navbar-brand"><img id="lrg-logo" src="/images/alpha.png"></a>
+	        </div>
+	       
+	     	
 		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="/" data-nav-section="home"><span>Home</span></a></li>
-		            <li><a href="/channel/qrcode.html"><span>Solution</span></a></li>
-		            <li><a href="/api/en.html"><span>API</span></a></li>
-					<li><a href="#contact"><span>Contact</span></a></li>
-					<li><a href="https://pay.alphapay.ca/login.html"><span>Login</span></a></li>
-					<li><a href="cn.html"><span>中文</span></a><li>
-		            
+		            <li><a href="/index.php" data-nav-section="home"><span style="color: white;">Home</span></a></li>
+		            <li><a href="/channel/h5.html"><span style="color: white;">Solution</span></a></li>
+					<li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
+					<li><a href="/index.php#contact"><span style="color: white;">Contact</span></a></li>
+					<li><a href="https://pay.alphapay.ca/login.html"><span style="color: white;">Login</span></a></li>
+		            <li><a href="/cn.html"><span style="color: white;">中文</span></a></li>
 		          </ul>
-		        </div>
-			    </nav>
-			  <!-- </div> -->
-		  </div>
+		   
+	    </div>
 	</header>
 	<nav id="phonenav" class="navbar navbar-default">
 		<div class="container-fluid">
@@ -88,7 +90,8 @@
 				<li><a href="/channel/merchant.html"><span style="color: #d51212;">Solution</span></a></li>
 				<li><a href="/api/en.html"><span style="color: #d51212;">API</span></a></li>
 				<li><a href="/index.php#contact"><span style="color: #d51212;">Contact</span></a></li>
-		
+				<li><a href="https://pay.alphapay.ca/login.html"><span style="color: #d51212;">Login</span></a></li>
+		        <li><a href="/cn.html"><span style="color: #d51212;">中文</span></a></li>
 			</ul>
 	
 		

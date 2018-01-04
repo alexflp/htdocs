@@ -1380,8 +1380,9 @@ body {
   height: auto;
 }
 #servicenav{
-  background-color: #d51212;
+  background-color: black;
   padding-bottom: 1px;
+  border: none;
 }
 
 #welcome{
