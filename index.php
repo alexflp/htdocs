@@ -57,10 +57,10 @@
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="/" data-nav-section="home"><span>Home</span></a></li>
 		            <li><a href="/channel/qrcode.html"><span>Solution</span></a></li>
-		            <li><a href="/api/en.html"><span>API</a></li>
-					<li><a href="#contact"><span>Contact</a></li>
-					<li><a href="https://pay.alphapay.ca/login.html"><span>Login</a></li>
-					<li><a href="cn.html"><span>中文</a><li>
+		            <li><a href="/api/en.html"><span>API</span></a></li>
+					<li><a href="#contact"><span>Contact</span></a></li>
+					<li><a href="https://pay.alphapay.ca/login.html"><span>Login</span></a></li>
+					<li><a href="cn.html"><span>中文</span></a><li>
 		            
 		          </ul>
 		        </div>
@@ -483,49 +483,10 @@
 			</div>
 		</div>
 	</div>
-	<div id="fh5co-pricing" data-section="pricing">
-	
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="col-md-8">
-						<div class="row animate-box" data-animate-effect="fadeIn">
-							<div class="col-md-8 col-md-offset-2">
-							
-								<h3 >​​See how we can help brands reach and connect with more customers.</h3>
-								<br>
-							</div>
-						</div>
-						<div class="row animate-box" data-animate-effect="fadeIn">
-							<div class="col-md-6">
-								<img class="inimgwidth" src="images/help.PNG">
-							</div>
-							<div class="col-md-6">
-								Using WeChat Pay and Ali Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
-						<img class="pictophone" src="images/bus.jpg">
-
-					</div>
-				</div>
-			</div>
-		<!-- 	<div class="row animate-box" data-animate-effect="fadeIn" >
-				<div class="col-md-8">
-					
-						<img src="/images/help.png">
-					
-					
-				</div>
-				<div id="right" class="col-md-4">
-					Using WeChat Pay, Chinese consumers are able to complete their transaction within seconds and removes the hassle of dealing with exchange rates when handling cash.
-				</div>
-			</div> -->
-		
-	</div>
 
 
-	<div id="fh5co-features" data-section="features">
+
+	<div id="fh5co-features" data-section="features" style="background-color:white;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">

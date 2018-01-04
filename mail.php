@@ -214,7 +214,8 @@ else
 				<li><a href="/channel/qrcode.html"><span style="color: white;">Solution</span></a></li>
 				<li><a href="/api/en.html"><span style="color: white;">API</span></a></li>
 				<li><a href="/index.php#contact"><span style="color: white;">Contact</span></a></li>
-				
+				<li><a href="https://pay.alphapay.ca/login.html"><span style="color: white;">Login</a></li>
+				<li><a href="cn.html"><span style="color: white;">中文</a><li>
 			  </ul>
 	   
 	</div>
