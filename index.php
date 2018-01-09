@@ -487,9 +487,24 @@
 		</div>
 	</div>
 
+	<div id="fh5co-features" data-section="features" style="background-color: white;">
+		<div class="row">
+			
+			<div class="col-md-12 section-heading text-center">
+					<h2 class="animate-box" data-animate-effect="fadeIn">How AlphaPay Works</h2>
+			</div>
+		</div>
 
+		<div class="row animate-box" data-animate-effect="fadeIn">
+			<div class="col-md-10 col-md-offset-1 col-xs-12" style="text-align: center;">
+				<img id="flow_pic" src="images/flowd.png">
 
-	<div id="fh5co-features" data-section="features" style="background-color:white;">
+			</div>
+
+		</div>
+	</div>
+
+	<div id="fh5co-features" data-section="features">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">

@@ -1606,3 +1606,8 @@ body {
 #phoneicon1{
   color:#d51212;
 }
+
+#flow_pic{
+  width: inherit;
+
+}
