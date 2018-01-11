@@ -11,7 +11,7 @@
 
 
 
-
+	
 
 
 	<link rel="shortcut icon" href="images/icon.png">
@@ -150,7 +150,7 @@
 
 	<div id="welcome">
 		<div class="container">
-			<h3>Online Channel</h3>
+			<h3>Online Channel <sapn><a href="/phpcartdemo" class="btn">DEMO</a></span></h3>
 			<br>
 			<div class="row online">
 			

@@ -1,0 +1,5 @@
+﻿AlphaPay-PHP通用支付插件
+
+
+请先在lib/AlphaPay.Config 里设定 Partner Code 和CREDENTIAL_CODE 
+
